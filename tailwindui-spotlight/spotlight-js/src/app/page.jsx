@@ -144,7 +144,7 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: '100 Devs',
+      company: '100Devs',
       title: 'Software Engineer',
       logo: logoDevs,
       start: '2023',

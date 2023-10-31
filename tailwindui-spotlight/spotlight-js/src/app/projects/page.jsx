@@ -2,11 +2,11 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+// import logoAnimaginary from '@/images/logos/animaginary.svg'
+// import logoCosmos from '@/images/logos/cosmos.svg'
+// import logoHelioStream from '@/images/logos/helio-stream.svg'
+// import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
+// import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 import Link from 'next/link'
 
@@ -20,7 +20,7 @@ const projects = [
       href: 'https://www.google.com',
       label: 'Github',
     },
-    logo: logoPlanetaria,
+    logo: '',
     stack: 'React, Nextjs, Tailwind',
   },
   {
@@ -31,7 +31,7 @@ const projects = [
       href: 'https://github.com/Galitie/website',
       label: 'Github',
     },
-    logo: logoAnimaginary,
+    logo: '',
     stack: 'React, Nextjs, Tailwind',
   },
   {
@@ -46,7 +46,7 @@ const projects = [
       href: 'https://github.com/Galitie/habit-hatcher',
       label: 'Github',
     },
-    logo: logoHelioStream,
+    logo: '',
     stack: 'React',
   },
 ]
