@@ -11,10 +11,9 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoDevs from '@/images/logos/100devs_logo.jpeg'
+import logoSOA from '@/images/logos/SOA_logo.jpeg'
+import logoVC from '@/images/logos/virtualchair_logo.jpeg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -116,7 +115,7 @@ function Role({ role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full">
         <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
@@ -147,7 +146,7 @@ function Resume() {
     {
       company: '100 Devs',
       title: 'Software Engineer',
-      logo: logoPlanetaria,
+      logo: logoDevs,
       start: '2023',
       end: {
         label: 'Present',
@@ -157,16 +156,16 @@ function Resume() {
     {
       company: 'Virtual Chair',
       title: 'Web Designer & Producer',
-      logo: logoAirbnb,
+      logo: logoVC,
       start: '2022',
       end: '2023',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'Seasons of Advice Wealth Management',
+      title: 'Graphic Designer & Social Media Assistant',
+      logo: logoSOA,
+      start: '2020',
+      end: '2023',
     },
   ]
 
@@ -181,8 +180,13 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+      <Button
+        href="https://docs.google.com/document/d/10MlbAa-Qpu_ovIO3eALDooi2xNPDcDg6/edit?usp=sharing&ouid=104867201726302158777&rtpof=true&sd=true"
+        variant="secondary"
+        className="group mt-6 w-full"
+        target="_blank"
+      >
+        Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
