@@ -99,7 +99,7 @@ function Article({ article }) {
 function SocialLink({ icon: Icon, ...props }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+      <Icon className="h-6 w-6 fill-teal-400 transition group-hover:fill-zinc-600 dark:fill-teal-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
 }
@@ -165,7 +165,7 @@ function Resume() {
       title: 'Graphic Designer & Social Media Assistant',
       logo: logoSOA,
       start: '2020',
-      end: '2023',
+      end: '2022',
     },
   ]
 
@@ -181,13 +181,21 @@ function Resume() {
         ))}
       </ol>
       <Button
+        href="/projects"
+        variant="secondary"
+        className="group mt-6 w-full dark:text-teal-300"
+      >
+        View Projects
+        <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+      </Button>
+      <Button
         href="https://docs.google.com/document/d/10MlbAa-Qpu_ovIO3eALDooi2xNPDcDg6/edit?usp=sharing&ouid=104867201726302158777&rtpof=true&sd=true"
         variant="secondary"
-        className="group mt-6 w-full"
+        className="group mt-6 w-full dark:text-teal-300"
         target="_blank"
       >
         Download Resume
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
       </Button>
     </div>
   )

@@ -68,8 +68,8 @@ export const metadata = {
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Projects I've worked on that includes client work & passion projects."
+      intro="I’ve worked on tons of projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
     >
       <ul
         role="list"
@@ -90,13 +90,13 @@ export default function Projects() {
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <Card.Description>Tech: {project.stack}</Card.Description>
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-600 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
+            <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
               <LinkIcon className="h-6 w-6 flex-none" />
               <Link href={project.link.href} className="ml-2" target="_blank">
                 {project.link.label}
               </Link>
             </p>
-            <p className="relative z-10 mt-2 flex text-sm font-medium text-zinc-600 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
+            <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
               <LinkIcon className="h-6 w-6 flex-none" />
               <Link href={project.github.href} className="ml-2" target="_blank">
                 {project.github.label}

@@ -19,7 +19,7 @@ function SocialLink({ className, href, children, icon: Icon }) {
         href={href}
         className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <Icon className="h-6 w-6 flex-none fill-teal-400 transition group-hover:fill-teal-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -60,18 +60,20 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              Hey, I’m Galit. A Software Engineer & hobbiest Game Developer in
-              NYC.
+              Hey, I’m Galit! A Software Engineer & Web Developer in NYC.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 I’ve loved making things for as long as I can remember. I made
-                my first game and website when I was 10 years old on the Windows
-                98 PC.
+                my first website and games when I was 10 years old on my
+                family's Windows 98 computer.
               </p>
-              <p>About me</p>
-              <p>About me</p>
-              <p>Today, About me.</p>
+              <p>I'm currently really excited about React and Nextjs.</p>
+              <p> Stuff</p>
+              <p>
+                When I'm not coding, you can find me face painting and dancing
+                lindy hop.
+              </p>
             </div>
           </div>
           <div className="lg:pl-20">

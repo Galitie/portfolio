@@ -71,7 +71,7 @@ export default function Games() {
             </h2>
             <Card.Description>{games.description}</Card.Description>
             <Card.Description>Tech: {games.stack}</Card.Description>
-            <p className="relative z-10 mt-2 flex text-sm font-medium text-zinc-600 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
+            <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
               {games.link ? (
                 <LinkIcon className="h-6 w-6 flex-none" />
               ) : (
@@ -85,7 +85,7 @@ export default function Games() {
                 console.log('hmmm')
               )}
             </p>
-            <p className="relative z-10 mt-2 flex text-sm font-medium text-zinc-600 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
+            <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
               {games.github ? (
                 <LinkIcon className="h-6 w-6 flex-none" />
               ) : (
