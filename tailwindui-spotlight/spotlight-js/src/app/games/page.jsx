@@ -29,7 +29,7 @@ export const metadata = {
     'I’ve spoken at events all around the world and been interviewed for many podcasts.',
 }
 
-export default function Speaking() {
+export default function Games() {
   return (
     <SimpleLayout
       title="I’ve spoken at events all around the world and been interviewed for many podcasts."

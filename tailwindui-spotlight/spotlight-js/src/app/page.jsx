@@ -174,21 +174,21 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: '100 Devs',
+      title: 'Software Engineer',
       logo: logoPlanetaria,
-      start: '2019',
+      start: '2023',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Virtual Chair',
+      title: 'Web Designer & Producer',
       logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      start: '2022',
+      end: '2023',
     },
     {
       company: 'Facebook',
@@ -196,13 +196,6 @@ function Resume() {
       logo: logoFacebook,
       start: '2011',
       end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
     },
   ]
 
@@ -303,7 +296,6 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
             <Resume />
           </div>
         </div>
