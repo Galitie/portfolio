@@ -8,46 +8,46 @@ import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 
+import Link from 'next/link'
+
 const projects = [
   {
     name: 'Planetaria',
     description:
       'Creating technology to empower civilians to explore space on their own terms.',
     link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+    github: {
+      href: 'https://www.google.com',
+      label: 'Github',
+    },
     logo: logoPlanetaria,
     stack: 'React, Nextjs, Tailwind',
   },
   {
-    name: 'Animaginary',
-    description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+    name: 'Portfolio',
+    description: 'This personal website!',
+    link: { href: 'https://www.Galitie.com', label: 'Live link' },
+    github: {
+      href: 'https://github.com/Galitie/website',
+      label: 'Github',
+    },
     logo: logoAnimaginary,
-    stack: '',
+    stack: 'React, Nextjs, Tailwind',
   },
   {
-    name: 'HelioStream',
+    name: 'Habit Hatcher',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
+      'A to-do list with a twist! Complete your tasks to hatch 10 different monsters!',
+    link: {
+      href: 'https://habit-hatcher.onrender.com/',
+      label: 'Live link',
+    },
+    github: {
+      href: 'https://github.com/Galitie/habit-hatcher',
+      label: 'Github',
+    },
     logo: logoHelioStream,
-    stack: '',
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-    stack: '',
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-    stack: '',
+    stack: 'React',
   },
 ]
 
@@ -88,13 +88,21 @@ export default function Projects() {
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
+              <p>{project.name}</p>
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <Card.Description>Tech: {project.stack}</Card.Description>
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-600 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
               <LinkIcon className="h-6 w-6 flex-none" />
-              <span className="ml-2">{project.link.label}</span>
+              <Link href={project.link.href} className="ml-2" target="_blank">
+                {project.link.label}
+              </Link>
+            </p>
+            <p className="relative z-10 mt-2 flex text-sm font-medium text-zinc-600 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
+              <LinkIcon className="h-6 w-6 flex-none" />
+              <Link href={project.github.href} className="ml-2" target="_blank">
+                {project.github.label}
+              </Link>
             </p>
           </Card>
         ))}
