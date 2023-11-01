@@ -96,10 +96,13 @@ function Article({ article }) {
   )
 }
 
-function SocialLink({ icon: Icon, ...props }) {
+function SocialLink({ icon: Icon, text, ...props }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-teal-400 transition group-hover:fill-zinc-600 dark:fill-teal-400 dark:group-hover:fill-zinc-300" />
+      <span className="group flex gap-1 text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-teal-400 dark:hover:text-zinc-300">
+        <Icon className="h-6 w-6 fill-teal-400 transition group-hover:fill-zinc-600 dark:fill-teal-400 dark:group-hover:fill-zinc-300" />
+        {text}
+      </span>
     </Link>
   )
 }
@@ -206,12 +209,12 @@ function Photos() {
 
   return (
     <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+      <div className="-my-4 flex justify-center gap-5 py-4 sm:gap-8">
         {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 duration-500 hover:rotate-3 hover:scale-125 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
               rotations[imageIndex % rotations.length],
             )}
           >
@@ -239,9 +242,9 @@ export default async function Home() {
             I'm a Software Engineer & Web Developer based in NYC.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi! I’m Galit, a software engineer and web developer based in New
-            York City. I'm passionate about interactive and gamified
-            experiences. Oh, also, I make games!
+            Hi! I’m Galit, a full stack software engineer and web developer
+            based in New York City. I'm passionate about UX, human first design,
+            and interactive and gamified experiences.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -249,29 +252,34 @@ export default async function Home() {
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
               target="_blank"
+              text="Twitter"
             />
             <SocialLink
               href="https://www.instagram.com/galit_ie/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
               target="_blank"
+              text="Insta"
             />
             <SocialLink
               href="https://github.com/Galitie"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
               target="_blank"
+              text="Github"
             />
             <SocialLink
               href="https://www.linkedin.com/in/galit-weinfeld/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
               target="_blank"
+              text="LinkedIn"
             />
             <SocialLink
               href="mailto:gsweinfeld@gmail.com"
               icon={MailIcon}
               target="_blank"
+              text="E-mail"
             />
           </div>
         </div>
