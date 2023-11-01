@@ -2,6 +2,7 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import Image from 'next/image'
 import Link from 'next/link'
+import catSummonerImage from '@/images/photos/catSummoner.png'
 
 const games = [
   {
@@ -16,7 +17,7 @@ const games = [
       href: 'https://github.com/raamweinfeld/Cat-Summoner',
       label: 'Github',
     },
-    logo: '',
+    logo: catSummonerImage,
     stack: ['Godot'],
   },
 
@@ -28,7 +29,7 @@ const games = [
       href: 'https://github.com/Galitie/async-mobile-client-app',
       label: 'Github',
     },
-    logo: '',
+    logo: catSummonerImage,
     stack: ['JavaScript', 'CSS', 'Godot', 'AWS'],
   },
 ]
@@ -60,38 +61,42 @@ export default function Games() {
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {games.map((games) => (
-          <Card as="li" key={games.name}>
-            <Image src={games.logo} alt="" className="h-8 w-8" unoptimized />
+        {games.map((game) => (
+          <Card as="li" key={game.name}>
+            <Image
+              src={game.logo}
+              alt=""
+              className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            />
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <p>{games.name}</p>
+              <p>{game.name}</p>
             </h2>
-            <Card.Description>{games.description}</Card.Description>
-            <Card.Badge>{games.stack}</Card.Badge>
+            <Card.Description>{game.description}</Card.Description>
+            <Card.Badge>{game.stack}</Card.Badge>
             <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
-              {games.link ? (
+              {game.link ? (
                 <LinkIcon className="h-6 w-6 flex-none" />
               ) : (
                 console.log('hmmm')
               )}
-              {games.link ? (
-                <Link href={games.link.href} className="ml-2" target="_blank">
-                  {games.link.label}
+              {game.link ? (
+                <Link href={game.link.href} className="ml-2" target="_blank">
+                  {game.link.label}
                 </Link>
               ) : (
                 console.log('hmmm')
               )}
             </p>
             <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
-              {games.github ? (
+              {game.github ? (
                 <LinkIcon className="h-6 w-6 flex-none" />
               ) : (
                 console.log('hmmm')
               )}
 
-              {games.github ? (
-                <Link href={games.github.href} className="ml-2" target="_blank">
-                  {games.github.label}
+              {game.github ? (
+                <Link href={game.github.href} className="ml-2" target="_blank">
+                  {game.github.label}
                 </Link>
               ) : (
                 console.log('hmmm')

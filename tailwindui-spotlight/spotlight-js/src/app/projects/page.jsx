@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-// import logoAnimaginary from '@/images/logos/animaginary.svg'
+import portfolio from '@/images/photos/portfolio.png'
+
 import Link from 'next/link'
 
 const projects = [
@@ -25,7 +26,7 @@ const projects = [
       href: 'https://github.com/Galitie/website',
       label: 'Github',
     },
-    logo: '',
+    logo: portfolio,
     stack: ['React', 'Nextjs', 'Tailwind CSS'],
   },
   {
@@ -73,7 +74,11 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <Image src={project.logo} alt="" className="h-8 w-8" unoptimized />
+            <Image
+              src={project.logo}
+              alt=""
+              className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            />
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
               <p>{project.name}</p>
             </h2>
