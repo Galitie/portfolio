@@ -15,7 +15,7 @@ const projects = [
       label: 'Github',
     },
     logo: '',
-    stack: ['React', 'Nextjs', 'Tailwind'],
+    stack: ['React', 'Nextjs', 'Tailwind CSS'],
   },
   {
     name: 'Portfolio',
@@ -26,7 +26,7 @@ const projects = [
       label: 'Github',
     },
     logo: '',
-    stack: ['React', 'Nextjs', 'Tailwind'],
+    stack: ['React', 'Nextjs', 'Tailwind CSS'],
   },
   {
     name: 'Habit Hatcher',
@@ -41,7 +41,7 @@ const projects = [
       label: 'Github',
     },
     logo: '',
-    stack: ['React', 'Nextjs', 'Tailwind'],
+    stack: ['React', 'Nextjs', 'Tailwind CSS'],
   },
 ]
 
