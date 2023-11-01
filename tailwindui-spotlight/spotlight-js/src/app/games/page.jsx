@@ -65,7 +65,7 @@ export default function Games() {
           <Card
             as="li"
             key={game.name}
-            className="rounded-2xl p-5 transition duration-200 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+            className="rounded-2xl bg-zinc-100 p-5 transition duration-200 hover:bg-zinc-200 dark:bg-zinc-800/25 dark:hover:bg-zinc-800"
           >
             <Image
               src={game.logo}

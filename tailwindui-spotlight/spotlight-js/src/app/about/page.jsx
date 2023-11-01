@@ -39,8 +39,7 @@ function MailIcon(props) {
 
 export const metadata = {
   title: 'About',
-  description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
+  description: 'I’m Galit Weinfeld. I live in New York City and code.',
 }
 
 export default function About() {
@@ -65,14 +64,38 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 I’ve loved making things for as long as I can remember. I made
-                my first website and games when I was 10 years old on my
-                family's Windows 98 computer.
+                my first FTP client/SQL server and website when I was 10 years
+                old on my family's Windows 98 computer.
               </p>
-              <p>I'm currently really excited about React and Nextjs.</p>
-              <p> Stuff</p>
               <p>
-                When I'm not coding, you can find me face painting and dancing
-                lindy hop.
+                I'm currently really excited about React, Nextjs and parallax
+                effects.
+              </p>
+              <p>
+                When I'm not making websites, you can find me{' '}
+                <Link
+                  href="/games"
+                  target="_blank"
+                  className="text-teal-500 dark:text-teal-400 dark:hover:text-zinc-300"
+                >
+                  partcipating in a game jam
+                </Link>
+                , playing video games,{' '}
+                <Link
+                  href="https://www.instagram.com/galit_ie/"
+                  target="_blank"
+                  className="text-teal-500 dark:text-teal-400 dark:hover:text-zinc-300"
+                >
+                  face painting
+                </Link>{' '}
+                and{' '}
+                <Link
+                  href="https://www.youtube.com/watch?v=j933cA2Aq1g&ab_channel=GalitDances"
+                  target="_blank"
+                  className="text-teal-500 dark:text-teal-400 dark:hover:text-zinc-300"
+                >
+                  dancing lindy hop.{' '}
+                </Link>
               </p>
             </div>
           </div>

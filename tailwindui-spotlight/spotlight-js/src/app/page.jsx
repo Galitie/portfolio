@@ -209,7 +209,7 @@ function Photos() {
 
   return (
     <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 py-4 sm:gap-8">
+      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
         {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
           <div
             key={image.src}
@@ -246,7 +246,7 @@ export default async function Home() {
             based in New York City. I'm passionate about UX, human first design,
             and interactive and gamified experiences.
           </p>
-          <div className="mt-6 flex gap-6">
+          <div className="mt-6 flex flex-wrap gap-6">
             <SocialLink
               href="https://twitter.com/galit_ie"
               aria-label="Follow on Twitter"
