@@ -19,7 +19,7 @@ export function Card({ as, className, children }) {
 
   return (
     <Component
-      className={clsx(className, 'group relative flex flex-col items-start')}
+      className={clsx(className, 'group relative flex flex-col items-start ')}
     >
       {children}
     </Component>

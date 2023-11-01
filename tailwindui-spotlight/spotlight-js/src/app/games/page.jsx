@@ -59,18 +59,23 @@ export default function Games() {
     >
       <ul
         role="list"
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+        className="grid grid-cols-1 gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 "
       >
         {games.map((game) => (
-          <Card as="li" key={game.name}>
+          <Card
+            as="li"
+            key={game.name}
+            className="rounded-2xl p-5 transition duration-200 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+          >
             <Image
               src={game.logo}
               alt=""
               className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
-            <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <p>{game.name}</p>
+            <h2 className="mt-1 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+              {game.name}
             </h2>
+
             <Card.Description>{game.description}</Card.Description>
             <Card.Badge>{game.stack}</Card.Badge>
             <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
