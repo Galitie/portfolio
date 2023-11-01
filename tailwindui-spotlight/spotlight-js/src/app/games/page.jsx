@@ -18,7 +18,7 @@ const games = [
       label: 'Github',
     },
     logo: '',
-    stack: 'Godot',
+    stack: ['Godot'],
   },
 
   {
@@ -30,7 +30,7 @@ const games = [
       label: 'Github',
     },
     logo: '',
-    stack: 'JavaScript, CSS, Godot, AWS',
+    stack: ['JavaScript', 'CSS', 'Godot', 'AWS'],
   },
 ]
 
@@ -70,7 +70,7 @@ export default function Games() {
               <p>{games.name}</p>
             </h2>
             <Card.Description>{games.description}</Card.Description>
-            <Card.Description>Tech: {games.stack}</Card.Description>
+            <Card.Badge>{games.stack}</Card.Badge>
             <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
               {games.link ? (
                 <LinkIcon className="h-6 w-6 flex-none" />

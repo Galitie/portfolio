@@ -50,9 +50,21 @@ Card.Title = function CardTitle({ as, href, children }) {
 
 Card.Description = function CardDescription({ children }) {
   return (
-    <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+    <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400 ">
       {children}
     </p>
+  )
+}
+
+Card.Badge = function CardBadge({ children }) {
+  return (
+    <div className="inline-flex gap-3">
+      {children.map((child) => (
+        <p className="relative z-10 mt-3 rounded-full bg-purple-200 px-2 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
+          {child}
+        </p>
+      ))}
+    </div>
   )
 }
 
