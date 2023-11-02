@@ -18,7 +18,7 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import FeaturedProject from '@/components/Project'
+import FeaturedProject from '@/components/FeaturedProject'
 
 function MailIcon(props) {
   return (
@@ -148,7 +148,7 @@ function Resume() {
     },
     {
       company: 'Seasons of Advice Wealth Management',
-      title: 'Graphic Designer & Social Media Assistant',
+      title: 'Graphic Designer',
       logo: logoSOA,
       start: '2020',
       end: '2022',
