@@ -259,7 +259,7 @@ export default async function Home() {
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
               target="_blank"
-              text="Insta"
+              text="Instagram"
             />
             <SocialLink
               href="https://github.com/Galitie"

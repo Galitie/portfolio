@@ -2,32 +2,69 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import portfolio from '@/images/photos/portfolio.png'
+import habitHatcher from '@/images/photos/habitHatcher.png'
+import sgs from '@/images/photos/sgs.png'
+import kat from '@/images/photos/kat.png'
+import virtualchair from '@/images/photos/virtualchair.png'
+import lindyhop from '@/images/photos/lindyhop.jpeg'
 
 import Link from 'next/link'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Corner Pocket',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'A dance registration site made by and for Lindy Hoppers. Find dance classes near you!',
+    link: { href: '#', label: 'Coming Soon' },
     github: {
-      href: 'https://www.google.com',
+      href: 'https://github.com/jazzyclimber/corner-pocket',
       label: 'Github',
     },
-    logo: portfolio,
-    stack: ['React', 'Nextjs', 'Tailwind CSS'],
+    logo: lindyhop,
+    stack: ['React', 'Nextjs', 'Tailwind CSS', 'Docker', 'JSX'],
   },
   {
     name: 'Portfolio',
-    description: 'This personal website!',
+    description: "You're looking at it - This personal website!",
     link: { href: 'https://www.Galitie.com', label: 'Live link' },
     github: {
       href: 'https://github.com/Galitie/website',
       label: 'Github',
     },
     logo: portfolio,
-    stack: ['React', 'Nextjs', 'Tailwind CSS'],
+    stack: ['React', 'Nextjs', 'Tailwind CSS', 'JSX'],
+  },
+  {
+    name: 'Shamrock Government Solutions',
+    description:
+      'A clean SPA for a client specializing in C Suite level consulting expertise for growing & transitioning companies.',
+    link: {
+      href: 'https://shamrockgovermentsolutions.com/',
+      label: 'Live link',
+    },
+    logo: sgs,
+    stack: ['Wordpress', 'HTML', 'CSS'],
+  },
+  {
+    name: 'Katherine Lund - Portfolio',
+    description:
+      'A single page site for Katherine Lund, a professional actor and model based in NYC.',
+    link: {
+      href: 'https://www.kathrinelund.com/',
+      label: 'Live link',
+    },
+    logo: kat,
+    stack: ['HTML', 'CSS', 'Google Sites'],
+  },
+  {
+    name: 'Virtual Chair',
+    description: '',
+    link: {
+      href: 'https://www.virtualchair.net/',
+      label: 'Live link',
+    },
+    logo: virtualchair,
+    stack: ['Javascript', 'HTML', 'CSS', 'Wix'],
   },
   {
     name: 'Habit Hatcher',
@@ -41,8 +78,8 @@ const projects = [
       href: 'https://github.com/Galitie/habit-hatcher',
       label: 'Github',
     },
-    logo: portfolio,
-    stack: ['React', 'Nextjs', 'Tailwind CSS'],
+    logo: habitHatcher,
+    stack: ['React', 'CSS', 'Local Storage', 'JSX'],
   },
 ]
 
@@ -88,17 +125,30 @@ export default function Projects() {
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <Card.Badge>{project.stack}</Card.Badge>
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
+            <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500 ">
               <LinkIcon className="h-6 w-6 flex-none" />
               <Link href={project.link.href} className="ml-2" target="_blank">
                 {project.link.label}
               </Link>
             </p>
             <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
-              <LinkIcon className="h-6 w-6 flex-none" />
-              <Link href={project.github.href} className="ml-2" target="_blank">
-                {project.github.label}
-              </Link>
+              {project.github ? (
+                <LinkIcon className="h-6 w-6 flex-none" />
+              ) : (
+                console.log('hmmm')
+              )}
+
+              {project.github ? (
+                <Link
+                  href={project.github.href}
+                  className="ml-2"
+                  target="_blank"
+                >
+                  {project.github.label}
+                </Link>
+              ) : (
+                console.log('hmmm')
+              )}
             </p>
           </Card>
         ))}

@@ -3,12 +3,14 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import Image from 'next/image'
 import Link from 'next/link'
 import catSummonerImage from '@/images/photos/catSummoner.png'
+import TYLERPGImage from '@/images/photos/TYLERPG.png'
+import toga from '@/images/photos/toga.png'
 
 const games = [
   {
     name: 'Cat Summoner',
     description:
-      'Summon cute and devilish cats by making sets with magical runes!',
+      'Summon cute and devilish cats by making sets with magical runes! See if you can beat all 10 challenging levels!',
     link: {
       href: 'https://galitie.itch.io/cat-summoner',
       label: 'Play me!',
@@ -24,13 +26,24 @@ const games = [
   {
     name: 'TYLERPG',
     description:
-      'A Jackbox like game where mobile users can connect to the game through a website.',
+      'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal.',
     github: {
       href: 'https://github.com/Galitie/async-mobile-client-app',
       label: 'Github',
     },
-    logo: catSummonerImage,
+    logo: TYLERPGImage,
     stack: ['JavaScript', 'CSS', 'Godot', 'AWS'],
+  },
+  {
+    name: 'Titans of Gross Anatomy',
+    description:
+      'Titans of Gross Anatomy is a fusion of a first-person rail shooter and an anatomy education game for your mobile device.',
+    github: {
+      href: '#',
+      label: 'Coming Soon',
+    },
+    logo: toga,
+    stack: ['Godot', 'Blender'],
   },
 ]
 
@@ -47,15 +60,14 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Games',
-  description:
-    'I’ve spoken at events all around the world and been interviewed for many podcasts.',
+  description: 'Games I have created.',
 }
 
 export default function Games() {
   return (
     <SimpleLayout
-      title="Games I've made with friends!"
-      intro="I’ve worked on tons of little games over the years but these are the ones that I’m most proud of."
+      title="Games I have had a hand in creating - game on!"
+      intro="In my free time you can find me coding, but as a hobbiest game dev! I am passionate about game design and development. Click a game below to learn more about it."
     >
       <ul
         role="list"
