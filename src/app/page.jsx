@@ -3,7 +3,6 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
@@ -19,7 +18,7 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import { formatDate } from '@/lib/formatDate'
+import FeaturedProject from '@/components/Project'
 
 function MailIcon(props) {
   return (
@@ -157,33 +156,37 @@ function Resume() {
   ]
 
   return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
-      </h2>
-      <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
-          <Role key={roleIndex} role={role} />
-        ))}
-      </ol>
-      <Button
-        href="/projects"
-        variant="secondary"
-        className="group mt-6 w-full dark:text-teal-300"
-      >
-        View Projects
-        <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
-      </Button>
-      <Button
-        href="https://docs.google.com/document/d/10MlbAa-Qpu_ovIO3eALDooi2xNPDcDg6/edit?usp=sharing&ouid=104867201726302158777&rtpof=true&sd=true"
-        variant="secondary"
-        className="group mt-6 w-full dark:text-teal-300"
-        target="_blank"
-      >
-        Download Resume
-        <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
-      </Button>
+    <div className="flex max-w-sm flex-col justify-between rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+      <div>
+        <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+          <BriefcaseIcon className="h-6 w-6 flex-none" />
+          <span className="ml-3">Work</span>
+        </h2>
+        <ol className="mt-6 space-y-4">
+          {resume.map((role, roleIndex) => (
+            <Role key={roleIndex} role={role} />
+          ))}
+        </ol>
+      </div>
+      <div>
+        <Button
+          href="/projects"
+          variant="secondary"
+          className="group mt-6 w-full dark:text-teal-300"
+        >
+          View All Projects
+          <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+        </Button>
+        <Button
+          href="https://docs.google.com/document/d/10MlbAa-Qpu_ovIO3eALDooi2xNPDcDg6/edit?usp=sharing&ouid=104867201726302158777&rtpof=true&sd=true"
+          variant="secondary"
+          className="group mt-6 w-full dark:text-teal-300"
+          target="_blank"
+        >
+          Download Resume
+          <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+        </Button>
+      </div>
     </div>
   )
 }
@@ -267,11 +270,10 @@ export default async function Home() {
         </div>
       </Container>
       <Photos />
-      <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Resume />
-          </div>
+      <Container className="mt-24 md:mt-24">
+        <div className="flex flex-wrap justify-center gap-5">
+          <FeaturedProject />
+          <Resume />
         </div>
       </Container>
     </>
