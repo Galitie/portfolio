@@ -6,7 +6,7 @@ import remarkGfm from 'remark-gfm'
 const nextConfig = {
   output: 'export',
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  images: { unoptimized: true }, // remove this when not testing
+  // images: { unoptimized: true }, // remove this when not testing
 }
 
 const withMDX = nextMDX({
