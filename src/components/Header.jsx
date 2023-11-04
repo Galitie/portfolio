@@ -9,7 +9,6 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import ConfettiExplosion from 'react-confetti-explosion'
 
 function CloseIcon(props) {
   return (
