@@ -207,8 +207,9 @@ function AvatarContainer({ className, ...props }) {
 
 function SparkleIcon(props) {
   const [isSmallExploding, setIsSmallExploding] = useState(false)
+  const inputRef = useRef(null)
   return (
-    <div onClick={() => setIsSmallExploding(!isSmallExploding)}>
+    <div onClick={() => setIsSmallExploding(!isSmallExploding)} ref={inputRef}>
       {isSmallExploding && <ConfettiExplosion {...smallProps} />}
       <svg
         xmlns="http://www.w3.org/2000/svg"
