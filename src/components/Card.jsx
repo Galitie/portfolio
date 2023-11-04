@@ -60,7 +60,7 @@ Card.Badge = function CardBadge({ children }) {
   return (
     <div className="flex flex-wrap gap-x-3">
       {children.map((child) => (
-        <p className="relative z-10 mt-3 inline rounded-full bg-purple-200 px-2 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
+        <p className="relative z-10 mt-3 inline rounded-full bg-purple-100 px-2 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10 dark:bg-purple-200">
           {child}
         </p>
       ))}

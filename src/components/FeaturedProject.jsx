@@ -54,7 +54,7 @@ export default function FeaturedProject() {
     <Card
       as="li"
       key={featuredProject.name}
-      className="max-w-sm rounded-2xl border border-zinc-100 bg-zinc-100 p-5 p-6 transition duration-200  dark:border-zinc-700/40 dark:bg-zinc-900 "
+      className="max-w-sm rounded-2xl border border-zinc-100 p-5 p-6 transition duration-200 dark:border-zinc-700/40 dark:bg-zinc-900 "
     >
       <h2 className=" mb-4 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <HeartIcon />
