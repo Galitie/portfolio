@@ -2,9 +2,6 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import Image from 'next/image'
 import Link from 'next/link'
-import catSummonerImage from '@/images/photos/catSummoner.png'
-import TYLERPGImage from '@/images/photos/TYLERPG.png'
-import toga from '@/images/photos/toga.png'
 
 const games = [
   {
@@ -19,7 +16,7 @@ const games = [
       href: 'https://github.com/raamweinfeld/Cat-Summoner',
       label: 'Github',
     },
-    logo: catSummonerImage,
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/dj4vnmopcq7lahqbwtzf',
     stack: ['Godot'],
   },
 
@@ -31,7 +28,7 @@ const games = [
       href: 'https://github.com/Galitie/async-mobile-client-app',
       label: 'Github',
     },
-    logo: TYLERPGImage,
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/vvdpjyztabulddaz8xsw',
     stack: ['JavaScript', 'CSS', 'Godot', 'AWS'],
   },
   {
@@ -42,7 +39,7 @@ const games = [
       href: '#',
       label: 'Coming Soon',
     },
-    logo: toga,
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/chrj0w99teskstvdigro',
     stack: ['Godot', 'Blender'],
   },
 ]
@@ -82,7 +79,9 @@ export default function Games() {
             <Image
               src={game.logo}
               alt=""
-              className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover object-cover dark:bg-zinc-800"
+              width="300"
+              height="300"
             />
             <h2 className="mt-1 text-base font-semibold text-zinc-800 dark:text-zinc-100">
               {game.name}

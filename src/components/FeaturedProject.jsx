@@ -49,7 +49,9 @@ export default function FeaturedProject() {
       <Image
         src={featuredProject.logo}
         alt=""
-        className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+        className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover object-cover dark:bg-zinc-800"
+        width="300"
+        height="300"
       />
       <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
         <p>{featuredProject.name}</p>

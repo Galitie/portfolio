@@ -10,7 +10,6 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -43,6 +42,9 @@ export const metadata = {
 }
 
 export default function About() {
+  const profilePic =
+    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/x5evgy7znrlaoaqjhr7b'
+
   return (
     <>
       <Container className="mt-16 sm:mt-32">
@@ -50,10 +52,12 @@ export default function About() {
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
-                src={portraitImage}
+                src={profilePic}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover duration-500 hover:scale-125 dark:bg-zinc-800"
+                width="450"
+                height="450"
               />
             </div>
           </div>

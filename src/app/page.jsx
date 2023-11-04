@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import { Cloudinary } from '@cloudinary/url-gen'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -13,11 +14,6 @@ import {
 import logoDevs from '@/images/logos/100devs_logo.jpeg'
 import logoSOA from '@/images/logos/SOA_logo.jpeg'
 import logoVC from '@/images/logos/virtualchair_logo.jpeg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
 import FeaturedProject from '@/components/FeaturedProject'
 
 function MailIcon(props) {
@@ -192,6 +188,13 @@ function Resume() {
 
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  const [image1, image2, image3, image4, image5] = [
+    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/vabvk7c4lezbyb36flul',
+    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/rpjze0waodp7zfeg1jlq',
+    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/d10pv5e9nzg9kxqin7ns',
+    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/eyuepnap25c6w4kwnbrp',
+    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/snlnelz09qyzgwyqdnf7',
+  ]
 
   return (
     <div className="mt-16 sm:mt-20">
@@ -209,12 +212,18 @@ function Photos() {
               alt=""
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
+              width="10"
+              height="10"
             />
           </div>
         ))}
       </div>
     </div>
   )
+}
+
+const App = () => {
+  const cld = new Cloudinary({ cloud: { cloudName: 'driui30ox' } })
 }
 
 export default async function Home() {

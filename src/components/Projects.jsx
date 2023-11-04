@@ -1,11 +1,5 @@
 import Image from 'next/image'
 import { Card } from '@/components/Card'
-import portfolio from '@/images/photos/portfolio.png'
-import habitHatcher from '@/images/photos/habitHatcher.png'
-import sgs from '@/images/photos/sgs.png'
-import kat from '@/images/photos/kat.png'
-import virtualchair from '@/images/photos/virtualchair.png'
-import lindyhop from '@/images/photos/lindyhop.jpeg'
 
 import Link from 'next/link'
 
@@ -19,7 +13,7 @@ export const projects = [
       href: 'https://github.com/jazzyclimber/corner-pocket',
       label: 'Github',
     },
-    logo: lindyhop,
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/q3w61rufkefm5dil3kwl',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'Docker', 'JSX'],
   },
   {
@@ -30,7 +24,7 @@ export const projects = [
       href: 'https://github.com/Galitie/website',
       label: 'Github',
     },
-    logo: portfolio,
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/ikvmyapcqyn6ytttksak',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'JSX'],
   },
   {
@@ -41,7 +35,7 @@ export const projects = [
       href: 'https://shamrockgovermentsolutions.com/',
       label: 'Live link',
     },
-    logo: sgs,
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/usqrmsqfbc6qgoppjyyj',
     stack: ['Wordpress', 'HTML', 'CSS'],
   },
   {
@@ -52,7 +46,7 @@ export const projects = [
       href: 'https://www.kathrinelund.com/',
       label: 'Live link',
     },
-    logo: kat,
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/tlqdj4smsmvti2mpuoht',
     stack: ['HTML', 'CSS', 'Google Sites'],
   },
   {
@@ -62,7 +56,7 @@ export const projects = [
       href: 'https://www.virtualchair.net/',
       label: 'Live link',
     },
-    logo: virtualchair,
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/lh19l9ryetucsfaqdjya',
     stack: ['Javascript', 'HTML', 'CSS', 'Wix'],
   },
   {
@@ -77,7 +71,7 @@ export const projects = [
       href: 'https://github.com/Galitie/habit-hatcher',
       label: 'Github',
     },
-    logo: habitHatcher,
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/vk7vhoihgnpi8dwkm1cp',
     stack: ['React', 'CSS', 'Local Storage', 'JSX'],
   },
 ]
@@ -108,7 +102,9 @@ export default function Projects() {
           <Image
             src={project.logo}
             alt=""
-            className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            width="300"
+            height="300"
           />
           <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
             <p>{project.name}</p>

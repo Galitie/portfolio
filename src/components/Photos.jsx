@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
-
 export function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
+  const [image1, image2, image3, image4, image5] = [
+    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/vabvk7c4lezbyb36flul',
+    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/rpjze0waodp7zfeg1jlq',
+    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/d10pv5e9nzg9kxqin7ns',
+    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/eyuepnap25c6w4kwnbrp',
+    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/snlnelz09qyzgwyqdnf7',
+  ]
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
@@ -26,6 +26,8 @@ export function Photos() {
               alt=""
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
+              width="0"
+              height="0"
             />
           </div>
         ))}
