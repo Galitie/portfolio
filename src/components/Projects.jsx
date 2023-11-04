@@ -51,7 +51,8 @@ export const projects = [
   },
   {
     name: 'Virtual Chair',
-    description: '',
+    description:
+      'A multi-page site for an academic conference production company.',
     link: {
       href: 'https://www.virtualchair.net/',
       label: 'Live link',
@@ -99,39 +100,50 @@ export default function Projects() {
           key={project.name}
           className="rounded-2xl border border-zinc-200 p-5 transition duration-200 hover:bg-zinc-200 dark:border-zinc-800 dark:hover:bg-zinc-800"
         >
-          <Image
-            src={project.logo}
-            alt=""
-            className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-            width="300"
-            height="300"
-          />
-          <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-            <p>{project.name}</p>
-          </h2>
-          <Card.Description>{project.description}</Card.Description>
-          <Card.Badge>{project.stack}</Card.Badge>
-          <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500 ">
-            <LinkIcon className="h-6 w-6 flex-none" />
-            <Link href={project.link.href} className="ml-2" target="_blank">
-              {project.link.label}
-            </Link>
-          </p>
-          <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
-            {project.github ? (
-              <LinkIcon className="h-6 w-6 flex-none" />
-            ) : (
-              console.log('hmmm')
-            )}
+          <div className="flex h-full flex-col justify-between">
+            <div>
+              <Image
+                src={project.logo}
+                alt=""
+                className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                width="300"
+                height="300"
+              />
+              <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                <p>{project.name}</p>
+              </h2>
+              <Card.Description>{project.description}</Card.Description>
+              <Card.Badge>{project.stack}</Card.Badge>
+            </div>
+            <div>
+              <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500 ">
+                <LinkIcon className="h-6 w-6 flex-none" />
+                <Link href={project.link.href} className="ml-2" target="_blank">
+                  {project.link.label}
+                </Link>
+              </p>
 
-            {project.github ? (
-              <Link href={project.github.href} className="ml-2" target="_blank">
-                {project.github.label}
-              </Link>
-            ) : (
-              console.log('hmmm')
-            )}
-          </p>
+              <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
+                {project.github ? (
+                  <LinkIcon className="h-6 w-6 flex-none" />
+                ) : (
+                  console.log('hmmm')
+                )}
+
+                {project.github ? (
+                  <Link
+                    href={project.github.href}
+                    className="ml-2"
+                    target="_blank"
+                  >
+                    {project.github.label}
+                  </Link>
+                ) : (
+                  console.log('hmmm')
+                )}
+              </p>
+            </div>
+          </div>
         </Card>
       ))}
     </ul>

@@ -18,9 +18,7 @@ export function Card({ as, className, children }) {
   let Component = as ?? 'div'
 
   return (
-    <Component
-      className={clsx(className, 'group relative flex flex-col items-start ')}
-    >
+    <Component className={clsx(className, 'group relative flex flex-col')}>
       {children}
     </Component>
   )
