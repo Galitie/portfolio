@@ -11,7 +11,7 @@ export const projects = [
     link: { href: '#', label: 'Coming Soon' },
     github: {
       href: 'https://github.com/jazzyclimber/corner-pocket',
-      label: 'Github',
+      label: 'GitHub',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/q3w61rufkefm5dil3kwl',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'Docker', 'JSX'],
@@ -22,7 +22,7 @@ export const projects = [
     link: { href: 'https://www.Galitie.com', label: 'Live link' },
     github: {
       href: 'https://github.com/Galitie/website',
-      label: 'Github',
+      label: 'GitHub',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/ikvmyapcqyn6ytttksak',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'JSX'],
@@ -69,7 +69,7 @@ export const projects = [
     },
     github: {
       href: 'https://github.com/Galitie/habit-hatcher',
-      label: 'Github',
+      label: 'GitHub',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/vk7vhoihgnpi8dwkm1cp',
     stack: ['React', 'CSS', 'Local Storage', 'JSX'],

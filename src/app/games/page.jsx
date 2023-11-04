@@ -14,7 +14,7 @@ const games = [
     },
     github: {
       href: 'https://github.com/raamweinfeld/Cat-Summoner',
-      label: 'Github',
+      label: 'GitHub',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/dj4vnmopcq7lahqbwtzf',
     stack: ['Godot'],
@@ -26,7 +26,7 @@ const games = [
       'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal.',
     github: {
       href: 'https://github.com/Galitie/async-mobile-client-app',
-      label: 'Github',
+      label: 'GitHub',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/vvdpjyztabulddaz8xsw',
     stack: ['JavaScript', 'CSS', 'Godot', 'AWS'],

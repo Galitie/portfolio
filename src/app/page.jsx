@@ -258,7 +258,7 @@ export default async function Home() {
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
               target="_blank"
-              text="Github"
+              text="GitHub"
             />
             <SocialLink
               href="https://www.linkedin.com/in/galit-weinfeld/"
