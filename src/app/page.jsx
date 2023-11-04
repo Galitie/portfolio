@@ -166,13 +166,6 @@ function Resume() {
       </div>
       <div>
         <Button
-          href="/projects"
-          variant="secondary"
-          className="group mt-6 w-full dark:text-teal-300"
-        >
-          View All Projects
-        </Button>
-        <Button
           href="https://docs.google.com/document/d/10MlbAa-Qpu_ovIO3eALDooi2xNPDcDg6/edit?usp=sharing&ouid=104867201726302158777&rtpof=true&sd=true"
           variant="secondary"
           className="group mt-6 w-full dark:text-teal-300"

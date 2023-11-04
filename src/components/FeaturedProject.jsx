@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import Link from 'next/link'
 import { projects } from '@/components/Projects'
+import { Button } from './Button'
 
 const featuredProject = projects[0]
 
@@ -35,12 +36,25 @@ function HeartIcon(props) {
   )
 }
 
+function ArrowDownIcon(props) {
+  return (
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
 export default function FeaturedProject() {
   return (
     <Card
       as="li"
       key={featuredProject.name}
-      className="max-w-sm rounded-2xl border border-zinc-100 bg-zinc-100 p-5 p-6 transition duration-200 hover:bg-zinc-200 dark:border-zinc-700/40 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+      className="max-w-sm rounded-2xl border border-zinc-100 bg-zinc-100 p-5 p-6 transition duration-200  dark:border-zinc-700/40 dark:bg-zinc-900 "
     >
       <h2 className=" mb-4 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <HeartIcon />
@@ -83,6 +97,14 @@ export default function FeaturedProject() {
           console.log('hmmm')
         )}
       </p>
+      <Button
+        href="/projects"
+        variant="secondary"
+        className="group mt-6 w-full dark:text-teal-300"
+      >
+        View All Projects
+        <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+      </Button>
     </Card>
   )
 }
