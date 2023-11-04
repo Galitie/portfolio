@@ -24,6 +24,10 @@ const games = [
     name: 'TYLERPG',
     description:
       'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal.',
+    link: {
+      href: '#',
+      label: 'Coming Soon',
+    },
     github: {
       href: 'https://github.com/Galitie/async-mobile-client-app',
       label: 'GitHub',
@@ -90,9 +94,9 @@ export default function Games() {
                 </h2>
 
                 <Card.Description>{game.description}</Card.Description>
-                <Card.Badge>{game.stack}</Card.Badge>
               </div>
               <div>
+                <Card.Badge>{game.stack}</Card.Badge>
                 <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
                   {game.link ? (
                     <LinkIcon className="h-6 w-6 flex-none" />

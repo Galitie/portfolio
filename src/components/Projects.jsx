@@ -18,13 +18,14 @@ export const projects = [
   },
   {
     name: 'Portfolio',
-    description: "You're looking at it - This personal website!",
+    description:
+      "You're looking at it - This personal website! Pretty neat, huh?",
     link: { href: 'https://www.Galitie.com', label: 'Live link' },
     github: {
       href: 'https://github.com/Galitie/website',
       label: 'GitHub',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/ikvmyapcqyn6ytttksak',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/x5evgy7znrlaoaqjhr7b',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'JSX'],
   },
   {
@@ -113,9 +114,9 @@ export default function Projects() {
                 <p>{project.name}</p>
               </h2>
               <Card.Description>{project.description}</Card.Description>
-              <Card.Badge>{project.stack}</Card.Badge>
             </div>
             <div>
+              <Card.Badge>{project.stack}</Card.Badge>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500 ">
                 <LinkIcon className="h-6 w-6 flex-none" />
                 <Link href={project.link.href} className="ml-2" target="_blank">
