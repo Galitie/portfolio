@@ -8,7 +8,6 @@ export const projects = [
     name: 'Corner Pocket',
     description:
       'A dance registration site made by and for Lindy Hoppers. Find dance classes near you!',
-    link: { href: '#', label: 'Coming Soon' },
     github: {
       href: 'https://github.com/jazzyclimber/corner-pocket',
       label: 'GitHub',
@@ -118,12 +117,24 @@ export default function Projects() {
             <div>
               <Card.Badge>{project.stack}</Card.Badge>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500 ">
-                <LinkIcon className="h-6 w-6 flex-none" />
-                <Link href={project.link.href} className="ml-2" target="_blank">
-                  {project.link.label}
-                </Link>
-              </p>
+                {project.link ? (
+                  <LinkIcon className="h-6 w-6 flex-none" />
+                ) : (
+                  console.log('hmmm')
+                )}
 
+                {project.link ? (
+                  <Link
+                    href={project.link.href}
+                    className="ml-2"
+                    target="_blank"
+                  >
+                    {project.link.label}
+                  </Link>
+                ) : (
+                  console.log('hmmm')
+                )}
+              </p>
               <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
                 {project.github ? (
                   <LinkIcon className="h-6 w-6 flex-none" />

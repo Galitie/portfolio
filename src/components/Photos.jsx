@@ -17,7 +17,7 @@ export function Photos() {
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 duration-500 hover:rotate-3 hover:scale-125 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 duration-500 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
               rotations[imageIndex % rotations.length],
             )}
           >

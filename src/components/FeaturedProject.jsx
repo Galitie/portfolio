@@ -72,11 +72,24 @@ export default function FeaturedProject() {
       </h2>
       <Card.Description>{featuredProject.description}</Card.Description>
       <Card.Badge>{featuredProject.stack}</Card.Badge>
-      <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500 ">
-        <LinkIcon className="h-6 w-6 flex-none" />
-        <Link href={featuredProject.link.href} className="ml-2" target="_blank">
-          {featuredProject.link.label}
-        </Link>
+      <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
+        {featuredProject.link ? (
+          <LinkIcon className="h-6 w-6 flex-none" />
+        ) : (
+          console.log('hmmm')
+        )}
+
+        {featuredProject.link ? (
+          <Link
+            href={featuredProject.link.href}
+            className="ml-2"
+            target="_blank"
+          >
+            {featuredProject.link.label}
+          </Link>
+        ) : (
+          console.log('hmmm')
+        )}
       </p>
       <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
         {featuredProject.github ? (

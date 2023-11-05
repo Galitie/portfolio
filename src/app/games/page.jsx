@@ -24,10 +24,6 @@ const games = [
     name: 'TYLERPG',
     description:
       'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal.',
-    link: {
-      href: '#',
-      label: 'Coming Soon',
-    },
     github: {
       href: 'https://github.com/Galitie/async-mobile-client-app',
       label: 'GitHub',
@@ -39,12 +35,12 @@ const games = [
     name: 'Titans of Gross Anatomy',
     description:
       'Titans of Gross Anatomy is a fusion of a first-person rail shooter and an anatomy education game for your mobile device.',
-    github: {
-      href: '#',
-      label: 'Coming Soon',
-    },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/chrj0w99teskstvdigro',
     stack: ['Godot', 'Blender'],
+    github: {
+      href: 'https://github.com/raamweinfeld/TOGA',
+      label: 'GitHub',
+    },
   },
 ]
 
@@ -97,7 +93,7 @@ export default function Games() {
               </div>
               <div>
                 <Card.Badge>{game.stack}</Card.Badge>
-                <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
+                <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500 ">
                   {game.link ? (
                     <LinkIcon className="h-6 w-6 flex-none" />
                   ) : (

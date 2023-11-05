@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import clsx from 'clsx'
 import { Cloudinary } from '@cloudinary/url-gen'
 
 import { Button } from '@/components/Button'
@@ -16,6 +15,7 @@ import logoSOA from '@/images/logos/SOA_logo.jpeg'
 import logoVC from '@/images/logos/virtualchair_logo.jpeg'
 import FeaturedProject from '@/components/FeaturedProject'
 import About from '@/components/About'
+import { Photos } from '@/components/Photos'
 
 function MailIcon(props) {
   return (
@@ -112,7 +112,7 @@ function Role({ role }) {
         </dd>
         <dt className="sr-only">Date</dt>
         <dd
-          className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+          className="ml-auto text-xs text-zinc-400 dark:text-zinc-400"
           aria-label={`${startLabel} until ${endLabel}`}
         >
           <time dateTime={startDate}>{startLabel}</time>{' '}
@@ -180,42 +180,6 @@ function Resume() {
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-  const [image1, image2, image3, image4, image5] = [
-    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/vabvk7c4lezbyb36flul',
-    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/rpjze0waodp7zfeg1jlq',
-    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/d10pv5e9nzg9kxqin7ns',
-    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/eyuepnap25c6w4kwnbrp',
-    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/snlnelz09qyzgwyqdnf7',
-  ]
-
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 duration-500 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-              rotations[imageIndex % rotations.length],
-            )}
-          >
-            <Image
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
-              width="10"
-              height="10"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
-
 const App = () => {
   const cld = new Cloudinary({ cloud: { cloudName: 'driui30ox' } })
 }
@@ -268,7 +232,7 @@ export default async function Home() {
               text="E-mail"
             />
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-6">
             <Button
               href="/projects"
               variant="secondary"
