@@ -4,7 +4,7 @@ import { Container } from '@/components/Container'
 
 export default function About() {
   const profilePic =
-    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/x5evgy7znrlaoaqjhr7b'
+    'https://res.cloudinary.com/driui30ox/image/upload/q_50//v1/website/x5evgy7znrlaoaqjhr7b'
 
   return (
     <Container className="mt-16 sm:mt-32">

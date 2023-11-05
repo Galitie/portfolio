@@ -4,11 +4,11 @@ import clsx from 'clsx'
 export function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
   const [image1, image2, image3, image4, image5] = [
-    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/vabvk7c4lezbyb36flul',
-    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/rpjze0waodp7zfeg1jlq',
-    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/d10pv5e9nzg9kxqin7ns',
-    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/eyuepnap25c6w4kwnbrp',
-    'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/snlnelz09qyzgwyqdnf7',
+    'https://res.cloudinary.com/driui30ox/image/upload/c_scale,h_500,w_500/q_50/v1/website/vabvk7c4lezbyb36flul',
+    'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/rpjze0waodp7zfeg1jlq',
+    'https://res.cloudinary.com/driui30ox/image/upload/c_scale,h_500,w_500/q_50/website/d10pv5e9nzg9kxqin7ns.jpg',
+    'https://res.cloudinary.com/driui30ox/image/upload/q_30/v1/website/eyuepnap25c6w4kwnbrp',
+    'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/snlnelz09qyzgwyqdnf7',
   ]
   return (
     <div className="mt-16 sm:mt-20">
