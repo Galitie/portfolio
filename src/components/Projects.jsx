@@ -12,7 +12,7 @@ export const projects = [
       href: 'https://github.com/jazzyclimber/corner-pocket',
       label: 'GitHub',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/q3w61rufkefm5dil3kwl',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/q3w61rufkefm5dil3kwl',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'Docker', 'JSX'],
   },
   {
@@ -24,7 +24,7 @@ export const projects = [
       href: 'https://github.com/Galitie/website',
       label: 'GitHub',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/x5evgy7znrlaoaqjhr7b',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/x5evgy7znrlaoaqjhr7b',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'JSX'],
   },
   {
@@ -35,7 +35,7 @@ export const projects = [
       href: 'https://shamrockgovermentsolutions.com/',
       label: 'Live link',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/usqrmsqfbc6qgoppjyyj',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/usqrmsqfbc6qgoppjyyj',
     stack: ['Wordpress', 'HTML', 'CSS'],
   },
   {
@@ -46,7 +46,7 @@ export const projects = [
       href: 'https://www.kathrinelund.com/',
       label: 'Live link',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/tlqdj4smsmvti2mpuoht',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/tlqdj4smsmvti2mpuoht',
     stack: ['HTML', 'CSS', 'Google Sites'],
   },
   {
@@ -57,7 +57,7 @@ export const projects = [
       href: 'https://www.virtualchair.net/',
       label: 'Live link',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/lh19l9ryetucsfaqdjya',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/lh19l9ryetucsfaqdjya',
     stack: ['Javascript', 'HTML', 'CSS', 'Wix'],
   },
   {
@@ -72,7 +72,7 @@ export const projects = [
       href: 'https://github.com/Galitie/habit-hatcher',
       label: 'GitHub',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/f_auto,q_auto/v1/website/vk7vhoihgnpi8dwkm1cp',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/vk7vhoihgnpi8dwkm1cp',
     stack: ['React', 'CSS', 'Local Storage', 'JSX'],
   },
 ]

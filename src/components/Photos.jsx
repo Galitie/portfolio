@@ -7,7 +7,7 @@ export function Photos() {
     'https://res.cloudinary.com/driui30ox/image/upload/c_scale,h_500,w_500/q_50/v1/website/vabvk7c4lezbyb36flul',
     'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/rpjze0waodp7zfeg1jlq',
     'https://res.cloudinary.com/driui30ox/image/upload/c_scale,h_500,w_500/q_50/website/d10pv5e9nzg9kxqin7ns.jpg',
-    'https://res.cloudinary.com/driui30ox/image/upload/q_30/v1/website/eyuepnap25c6w4kwnbrp',
+    'https://res.cloudinary.com/driui30ox/image/upload/q_20/v1/website/eyuepnap25c6w4kwnbrp',
     'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/snlnelz09qyzgwyqdnf7',
   ]
   return (

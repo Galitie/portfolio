@@ -24,7 +24,6 @@ export function Footer() {
                 <NavLink href="/">Home</NavLink>
                 <NavLink href="/projects">Portfolio</NavLink>
                 <NavLink href="/games">Games</NavLink>
-                <NavLink href="/about">About</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Galit Weinfeld. All rights
