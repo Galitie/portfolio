@@ -82,7 +82,7 @@ export default function About() {
                   target="_blank"
                   className="text-teal-500 dark:text-teal-400 dark:hover:text-zinc-300"
                 >
-                  partcipating in a game jam
+                  participating in a game jam
                 </Link>
                 , playing video games,{' '}
                 <Link

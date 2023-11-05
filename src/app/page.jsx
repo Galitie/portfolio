@@ -15,6 +15,7 @@ import logoDevs from '@/images/logos/100devs_logo.jpeg'
 import logoSOA from '@/images/logos/SOA_logo.jpeg'
 import logoVC from '@/images/logos/virtualchair_logo.jpeg'
 import FeaturedProject from '@/components/FeaturedProject'
+import About from '@/components/About'
 
 function MailIcon(props) {
   return (
@@ -196,7 +197,7 @@ function Photos() {
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 duration-500 hover:rotate-3 hover:scale-125 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 duration-500 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
               rotations[imageIndex % rotations.length],
             )}
           >
@@ -228,8 +229,8 @@ export default async function Home() {
             Full Stack Software Engineer & Web Developer based in NYC.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi, I’m Galit! Not only do I love to code, but I am passionate about
-            UX, human first design, and interactive and gamified experiences.
+            Not only do I love to code, but I am passionate about UX, human
+            first design, and interactive and gamified experiences.
           </p>
           <div className="mt-6 flex flex-wrap gap-6">
             <SocialLink
@@ -267,9 +268,29 @@ export default async function Home() {
               text="E-mail"
             />
           </div>
+          <div className="flex gap-2">
+            <Button
+              href="/projects"
+              variant="secondary"
+              className="group mt-6 dark:text-teal-300"
+            >
+              View All Projects
+              <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+            </Button>
+            <Button
+              href="https://docs.google.com/document/d/10MlbAa-Qpu_ovIO3eALDooi2xNPDcDg6/edit?usp=sharing&ouid=104867201726302158777&rtpof=true&sd=true"
+              variant="secondary"
+              className="group mt-6 dark:text-teal-300"
+              target="_blank"
+            >
+              Download Resume
+              <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+            </Button>
+          </div>
         </div>
       </Container>
       <Photos />
+      <About />
       <Container className="mt-24 md:mt-24">
         <div className="flex flex-wrap justify-center gap-6">
           <FeaturedProject />
