@@ -8,10 +8,6 @@ export const projects = [
     name: 'Corner Pocket',
     description:
       'A dance registration site made by and for Lindy Hoppers. Find dance classes near you!',
-    github: {
-      href: 'https://github.com/jazzyclimber/corner-pocket',
-      label: 'GitHub',
-    },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/q3w61rufkefm5dil3kwl',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'Docker', 'JSX'],
   },

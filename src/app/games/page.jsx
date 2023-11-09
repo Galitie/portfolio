@@ -37,10 +37,6 @@ const games = [
       'Titans of Gross Anatomy is a fusion of a first-person rail shooter and an anatomy education game for your mobile device.',
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/chrj0w99teskstvdigro',
     stack: ['Godot', 'Blender'],
-    github: {
-      href: 'https://github.com/raamweinfeld/TOGA',
-      label: 'GitHub',
-    },
   },
 ]
 
