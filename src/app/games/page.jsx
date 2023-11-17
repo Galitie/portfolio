@@ -89,7 +89,7 @@ export default function Games() {
               </div>
               <div>
                 <Card.Badge>{game.stack}</Card.Badge>
-                <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500 ">
+                <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500 ">
                   {game.link ? (
                     <LinkIcon className="h-6 w-6 flex-none" />
                   ) : (
@@ -107,7 +107,7 @@ export default function Games() {
                     console.log('hmmm')
                   )}
                 </p>
-                <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
+                <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500">
                   {game.github ? (
                     <LinkIcon className="h-6 w-6 flex-none" />
                   ) : (

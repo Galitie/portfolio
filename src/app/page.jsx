@@ -79,8 +79,8 @@ function ArrowDownIcon(props) {
 function SocialLink({ icon: Icon, text, ...props }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <span className="group flex gap-1 text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-teal-400 dark:hover:text-zinc-300">
-        <Icon className="h-6 w-6 fill-teal-400 transition group-hover:fill-zinc-600 dark:fill-teal-400 dark:group-hover:fill-zinc-300" />
+      <span className="group flex gap-1 text-sm font-medium text-zinc-800 transition hover:text-teal-700 dark:text-teal-400 dark:hover:text-zinc-300">
+        <Icon className="h-6 w-6 fill-teal-700 transition group-hover:fill-zinc-600 dark:fill-teal-400 dark:group-hover:fill-zinc-300" />
         {text}
       </span>
     </Link>
@@ -173,7 +173,7 @@ function Resume() {
           target="_blank"
         >
           Download Resume
-          <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+          <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
         </Button>
       </div>
     </div>
@@ -239,7 +239,7 @@ export default async function Home() {
               className="group mt-6 dark:text-teal-300"
             >
               View All Projects
-              <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+              <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
             </Button>
             <Button
               href="https://docs.google.com/document/d/10MlbAa-Qpu_ovIO3eALDooi2xNPDcDg6/edit?usp=sharing&ouid=104867201726302158777&rtpof=true&sd=true"
@@ -248,7 +248,7 @@ export default async function Home() {
               target="_blank"
             >
               Download Resume
-              <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+              <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
             </Button>
           </div>
         </div>

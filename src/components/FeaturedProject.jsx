@@ -72,7 +72,7 @@ export default function FeaturedProject() {
       </h2>
       <Card.Description>{featuredProject.description}</Card.Description>
       <Card.Badge>{featuredProject.stack}</Card.Badge>
-      <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
+      <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500">
         {featuredProject.link ? (
           <LinkIcon className="h-6 w-6 flex-none" />
         ) : (
@@ -91,7 +91,7 @@ export default function FeaturedProject() {
           console.log('hmmm')
         )}
       </p>
-      <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-400 transition hover:text-teal-500 dark:text-teal-300 dark:hover:text-teal-500">
+      <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500">
         {featuredProject.github ? (
           <LinkIcon className="h-6 w-6 flex-none" />
         ) : (
@@ -116,7 +116,7 @@ export default function FeaturedProject() {
         className="group mt-6 w-full dark:text-teal-300"
       >
         View All Projects
-        <ArrowDownIcon className="h-4 w-4 stroke-teal-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+        <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
       </Button>
     </Card>
   )
