@@ -17,7 +17,7 @@ export const projects = [
       "You're looking at it - This personal website! Pretty neat, huh?",
     link: { href: 'https://www.Galitie.com', label: 'Live link' },
     github: {
-      href: 'https://github.com/Galitie/website',
+      href: 'https://github.com/Galitie/portfolio',
       label: 'GitHub',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/x5evgy7znrlaoaqjhr7b',
