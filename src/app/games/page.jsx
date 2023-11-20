@@ -32,6 +32,21 @@ const games = [
     stack: ['JavaScript', 'CSS', 'Godot', 'AWS'],
   },
   {
+    name: 'Meowvana',
+    description:
+      'Game Jam Entry - the challenge was to make a 20 second game in a couple of weeks! We created a clicker game about helping a cat chase away distracting thoughts and reach Meowvana',
+    link: {
+      href: 'https://galitie.itch.io/meowvana',
+      label: 'Play me!',
+    },
+    github: {
+      href: 'https://github.com/Galitie/20-sec-game-jam/tree/playtest',
+      label: 'GitHub',
+    },
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/meowvana_ehhz4u',
+    stack: ['Godot'],
+  },
+  {
     name: 'Titans of Gross Anatomy',
     description:
       'Titans of Gross Anatomy is a fusion of a first-person rail shooter and an anatomy education game for your mobile device.',
