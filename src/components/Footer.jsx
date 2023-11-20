@@ -1,6 +1,6 @@
 import Link from 'next/link'
-
 import { ContainerInner, ContainerOuter } from '@/components/Container'
+import Socials from './Socials'
 
 function NavLink({ href, children }) {
   return (
@@ -29,6 +29,9 @@ export function Footer() {
                 &copy; {new Date().getFullYear()} Galit Weinfeld. All rights
                 reserved.
               </p>
+            </div>
+            <div>
+              <Socials />
             </div>
           </ContainerInner>
         </div>

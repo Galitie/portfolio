@@ -5,13 +5,6 @@ import Link from 'next/link'
 
 export const projects = [
   {
-    name: 'Corner Pocket',
-    description:
-      'A dance registration site made by and for Lindy Hoppers. Find dance classes near you!',
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/q3w61rufkefm5dil3kwl',
-    stack: ['React', 'Nextjs', 'Tailwind CSS', 'Docker', 'JSX'],
-  },
-  {
     name: 'Portfolio',
     description:
       "You're looking at it - This personal website! Pretty neat, huh?",
@@ -20,8 +13,15 @@ export const projects = [
       href: 'https://github.com/Galitie/portfolio',
       label: 'GitHub',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/x5evgy7znrlaoaqjhr7b',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/snlnelz09qyzgwyqdnf7',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'JSX'],
+  },
+  {
+    name: 'Corner Pocket',
+    description:
+      'A dance registration site made by and for Lindy Hoppers. Find dance classes near you!',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/q3w61rufkefm5dil3kwl',
+    stack: ['React', 'Nextjs', 'Tailwind CSS', 'Docker', 'JSX'],
   },
   {
     name: 'Shamrock Government Solutions',

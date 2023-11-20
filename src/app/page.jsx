@@ -1,44 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Cloudinary } from '@cloudinary/url-gen'
+import Socials from '@/components/Socials'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons'
 import logoDevs from '@/images/logos/100devs_logo.jpeg'
 import logoSOA from '@/images/logos/SOA_logo.jpeg'
 import logoVC from '@/images/logos/virtualchair_logo.jpeg'
 import FeaturedProject from '@/components/FeaturedProject'
 import About from '@/components/About'
 import { Photos } from '@/components/Photos'
-
-function MailIcon(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-      />
-      <path
-        d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-        className="stroke-zinc-400 dark:stroke-zinc-500"
-      />
-    </svg>
-  )
-}
 
 function BriefcaseIcon(props) {
   return (
@@ -73,17 +45,6 @@ function ArrowDownIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
-
-function SocialLink({ icon: Icon, text, ...props }) {
-  return (
-    <Link className="group -m-1 p-1" {...props}>
-      <span className="group flex gap-1 text-sm font-medium text-zinc-800 transition hover:text-teal-700 dark:text-teal-400 dark:hover:text-zinc-300">
-        <Icon className="h-6 w-6 fill-teal-700 transition group-hover:fill-zinc-600 dark:fill-teal-400 dark:group-hover:fill-zinc-300" />
-        {text}
-      </span>
-    </Link>
   )
 }
 
@@ -196,42 +157,7 @@ export default async function Home() {
             Not only do I love to code, but I am passionate about UX, human
             first design, and interactive and gamified experiences.
           </p>
-          <div className="mt-6 flex flex-wrap gap-6">
-            <SocialLink
-              href="https://twitter.com/galit_ie"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-              target="_blank"
-              text="Twitter"
-            />
-            <SocialLink
-              href="https://www.instagram.com/galit_ie/"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-              target="_blank"
-              text="Instagram"
-            />
-            <SocialLink
-              href="https://github.com/Galitie"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-              target="_blank"
-              text="GitHub"
-            />
-            <SocialLink
-              href="https://www.linkedin.com/in/galit-weinfeld/"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-              target="_blank"
-              text="LinkedIn"
-            />
-            <SocialLink
-              href="mailto:gsweinfeld@gmail.com"
-              icon={MailIcon}
-              target="_blank"
-              text="E-mail"
-            />
-          </div>
+          <Socials />
           <div className="flex gap-6">
             <Button
               href="/projects"

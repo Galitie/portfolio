@@ -23,7 +23,7 @@ const games = [
   {
     name: 'TYLERPG',
     description:
-      'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal.',
+      'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal. TyleRPG is a novel game that spans genres from RPG to dating simulator.',
     github: {
       href: 'https://github.com/Galitie/async-mobile-client-app',
       label: 'GitHub',
@@ -34,7 +34,7 @@ const games = [
   {
     name: 'Meowvana',
     description:
-      'Game Jam Entry - the challenge was to make a 20 second game in a couple of weeks! We created a clicker game about helping a cat chase away distracting thoughts and reach Meowvana',
+      'The challenge was to make a 20 second game in a short amount of time! We created a clicker game about helping a cat chase away distracting thoughts and reach Meowvana.',
     link: {
       href: 'https://galitie.itch.io/meowvana',
       label: 'Play me!',
@@ -74,8 +74,8 @@ export const metadata = {
 export default function Games() {
   return (
     <SimpleLayout
-      title="Games I have had a hand in creating - game on!"
-      intro="In my free time you can find me coding, but as a hobbiest game dev! I am passionate about game design and development. Click a game below to learn more about it."
+      title="Games I have had a hand in creating : "
+      intro="In my free time you can find me coding, but as a hobbiest game dev! I am passionate about game design and development."
     >
       <ul
         role="list"
