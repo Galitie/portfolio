@@ -21,3 +21,4 @@ export function Button({ variant = 'primary', className, ...props }) {
     <Link className={className} {...props} />
   )
 }
+
