@@ -81,13 +81,8 @@ export default function About() {
                 dancing lindy hop.{' '}
               </Link>
             </p>
-            <p>
-              Languages:<Card.Badge>{languages}</Card.Badge>
-            </p>
-
-            <p>
-              Tools:<Card.Badge>{tools}</Card.Badge>
-            </p>
+            <Card.Badge>{languages}</Card.Badge>
+            <Card.Badge>{tools}</Card.Badge>
           </div>
         </div>
       </div>

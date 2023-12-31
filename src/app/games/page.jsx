@@ -40,7 +40,7 @@ const games = [
     description:
       'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal. TYLERPG is a novel game that spans genres from RPG to dating simulator.',
     link: {
-      href: 'https://docs.google.com/presentation/d/e/2PACX-1vQfGEuVvPQ-S-way-OkObqxQei7gSY5IgEJlmVCQ9Kcz0fbXVpi650R8S4r9780Yo0_D6dbrCnkQxVt/pub?start=false&loop=false&delayms=3000',
+      href: 'https://github.com/Galitie/async-mobile-client-app/assets/105133862/f9fda7ab-785f-42a9-bfa7-1f96a9d03eeb',
       label: 'Preview',
     },
     github: {
