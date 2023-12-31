@@ -19,8 +19,12 @@ export const tools = [
   'MongoDB',
   'REST API',
   'Tailwind',
+  'Docker',
+  'Storybook',
   'Git/GitHub',
   'Wordpress',
+  'Elementor',
+  'Godot',
 ]
 
 export default function About() {
@@ -53,10 +57,6 @@ export default function About() {
               my family's Windows 98 computer.
             </p>
             <p>
-              I'm currently really excited about React, Nextjs and parallax
-              effects.
-            </p>
-            <p>
               When I'm not making websites, you can find me{' '}
               <Link
                 href="/games"
@@ -82,8 +82,13 @@ export default function About() {
                 dancing lindy hop.{' '}
               </Link>
             </p>
-            <Card.Badge>{languages}</Card.Badge>
-            <Card.Badge>{tools}</Card.Badge>
+            <p>
+              Languages:<Card.Badge>{languages}</Card.Badge>
+            </p>
+
+            <p>
+              Tools:<Card.Badge>{tools}</Card.Badge>
+            </p>
           </div>
         </div>
       </div>
