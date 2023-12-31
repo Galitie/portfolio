@@ -80,6 +80,20 @@ export default function Socials() {
   return (
     <div className="mt-6 flex flex-wrap gap-6">
       <SocialLink
+        href="https://www.linkedin.com/in/galit-weinfeld/"
+        aria-label="Follow on LinkedIn"
+        icon={LinkedInIcon}
+        target="_blank"
+        text="LinkedIn"
+      />
+      <SocialLink
+        href="https://github.com/Galitie"
+        aria-label="Follow on GitHub"
+        icon={GitHubIcon}
+        target="_blank"
+        text="GitHub"
+      />
+      <SocialLink
         href="https://twitter.com/galit_ie"
         aria-label="Follow on Twitter"
         icon={TwitterIcon}
@@ -92,20 +106,6 @@ export default function Socials() {
         icon={InstagramIcon}
         target="_blank"
         text="Instagram"
-      />
-      <SocialLink
-        href="https://github.com/Galitie"
-        aria-label="Follow on GitHub"
-        icon={GitHubIcon}
-        target="_blank"
-        text="GitHub"
-      />
-      <SocialLink
-        href="https://www.linkedin.com/in/galit-weinfeld/"
-        aria-label="Follow on LinkedIn"
-        icon={LinkedInIcon}
-        target="_blank"
-        text="LinkedIn"
       />
       <SocialLink
         href="mailto:gsweinfeld@gmail.com"
