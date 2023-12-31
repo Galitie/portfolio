@@ -128,7 +128,7 @@ function Resume() {
       </div>
       <div>
         <Button
-          href="https://docs.google.com/document/d/10MlbAa-Qpu_ovIO3eALDooi2xNPDcDg6/edit?usp=sharing&ouid=104867201726302158777&rtpof=true&sd=true"
+          href="https://docs.google.com/document/d/14-UH9hPYvC_GFtm55zFInI8R3mKKiXDvwkDXawYMegY/edit?usp=sharing"
           variant="secondary"
           className="group mt-6 w-full dark:text-teal-300"
           target="_blank"
@@ -168,7 +168,7 @@ export default async function Home() {
               <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
             </Button>
             <Button
-              href="https://docs.google.com/document/d/10MlbAa-Qpu_ovIO3eALDooi2xNPDcDg6/edit?usp=sharing&ouid=104867201726302158777&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/14-UH9hPYvC_GFtm55zFInI8R3mKKiXDvwkDXawYMegY/edit?usp=sharing"
               variant="secondary"
               className="group mt-6 dark:text-teal-300"
               target="_blank"
