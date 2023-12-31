@@ -64,7 +64,7 @@ const games = [
   {
     name: 'Titans of Gross Anatomy',
     description:
-      'Titans of Gross Anatomy is a fusion of a first-person rail shooter and an anatomy education game for your mobile device.',
+      'Titans of Gross Anatomy is a work in progress. TOGA is a  fusion of a first-person rail shooter and an anatomy education game for your mobile device.',
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/chrj0w99teskstvdigro',
     stack: ['Godot', 'Blender'],
   },
@@ -90,7 +90,7 @@ export default function Games() {
   return (
     <SimpleLayout
       title="Games I have had a hand in creating : "
-      intro="In my free time you can find me coding, but as a hobbiest game dev! I am passionate about game design and development."
+      intro="In my free time you can find me coding, but as a hobbiest game dev! I am passionate about game design and development. Also I like cats..."
     >
       <ul
         role="list"

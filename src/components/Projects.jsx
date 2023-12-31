@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Card } from '@/components/Card'
-
 import Link from 'next/link'
 
 export const projects = [
@@ -30,7 +29,7 @@ export const projects = [
   {
     name: 'Corner Pocket',
     description:
-      'A dance registration site made by and for Lindy Hoppers. Currently a work in progress - I am responsible for creating components such as modals for the site.',
+      'Currently a work in progress - A dance registration site made by and for Lindy Hoppers. I am responsible for creating components such as modals for the site.',
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/q3w61rufkefm5dil3kwl',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'Docker', 'JSX'],
   },

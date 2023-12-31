@@ -1,6 +1,27 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { Card } from './Card'
 import { Container } from '@/components/Container'
+
+export const languages = [
+  'JavaScript',
+  'JSX',
+  'TypeScript',
+  'Python',
+  'HTML',
+  'CSS',
+  'GDScript',
+]
+export const tools = [
+  'React',
+  'Next.js',
+  'Node',
+  'MongoDB',
+  'REST API',
+  'Tailwind',
+  'Git/GitHub',
+  'Wordpress',
+]
 
 export default function About() {
   const profilePic =
@@ -61,6 +82,8 @@ export default function About() {
                 dancing lindy hop.{' '}
               </Link>
             </p>
+            <Card.Badge>{languages}</Card.Badge>
+            <Card.Badge>{tools}</Card.Badge>
           </div>
         </div>
       </div>
