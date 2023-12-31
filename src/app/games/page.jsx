@@ -21,17 +21,6 @@ const games = [
   },
 
   {
-    name: 'TYLERPG',
-    description:
-      'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal. TyleRPG is a novel game that spans genres from RPG to dating simulator.',
-    github: {
-      href: 'https://github.com/Galitie/async-mobile-client-app',
-      label: 'GitHub',
-    },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/vvdpjyztabulddaz8xsw',
-    stack: ['JavaScript', 'CSS', 'Godot', 'AWS'],
-  },
-  {
     name: 'Meowvana',
     description:
       'The challenge was to make a 20 second game in a short amount of time! We created a clicker game about helping a cat chase away distracting thoughts and reach Meowvana.',
@@ -45,6 +34,32 @@ const games = [
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/meowvana_ehhz4u',
     stack: ['Godot'],
+  },
+  {
+    name: 'TYLERPG',
+    description:
+      'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal. TYLERPG is a novel game that spans genres from RPG to dating simulator.',
+    github: {
+      href: 'https://github.com/Galitie/async-mobile-client-app',
+      label: 'GitHub',
+    },
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/vvdpjyztabulddaz8xsw',
+    stack: ['JavaScript', 'CSS', 'Godot', 'AWS'],
+  },
+  {
+    name: 'Habit Hatcher',
+    description:
+      'A to-do list with a twist! Complete your tasks to hatch 10 different monsters!',
+    link: {
+      href: 'https://habit-hatcher.onrender.com/',
+      label: 'Live link',
+    },
+    github: {
+      href: 'https://github.com/Galitie/habit-hatcher',
+      label: 'GitHub',
+    },
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/vk7vhoihgnpi8dwkm1cp',
+    stack: ['React', 'CSS', 'Local Storage', 'JSX'],
   },
   {
     name: 'Titans of Gross Anatomy',

@@ -5,6 +5,17 @@ import Link from 'next/link'
 
 export const projects = [
   {
+    name: 'Elopement Photography Awards',
+    description:
+      'A multi-page website for a photography awards site, which includes users and photo submission forms.',
+    link: {
+      href: 'https://elopementphotographyawards.com/',
+      label: 'Live link',
+    },
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1//website/AwardCircleInstagram_ihuwrp',
+    stack: ['Wordpress', 'HTML', 'CSS', 'Elementor'],
+  },
+  {
     name: 'Portfolio',
     description:
       "You're looking at it - This personal website! Pretty neat, huh?",
@@ -19,20 +30,20 @@ export const projects = [
   {
     name: 'Corner Pocket',
     description:
-      'A dance registration site made by and for Lindy Hoppers. Find dance classes near you!',
+      'A dance registration site made by and for Lindy Hoppers. Currently a work in progress - I am responsible for creating components such as modals for the site.',
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/q3w61rufkefm5dil3kwl',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'Docker', 'JSX'],
   },
   {
     name: 'Shamrock Government Solutions',
     description:
-      'A clean SPA for a client specializing in C Suite level consulting expertise for growing & transitioning companies.',
+      'A clean one page website for a client specializing in C Suite level consulting expertise for growing & transitioning companies.',
     link: {
       href: 'https://shamrockgovermentsolutions.com/',
       label: 'Live link',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/usqrmsqfbc6qgoppjyyj',
-    stack: ['Wordpress', 'HTML', 'CSS'],
+    stack: ['Wordpress', 'HTML', 'CSS', 'Elementor'],
   },
   {
     name: 'Katherine Lund - Portfolio',
@@ -55,21 +66,6 @@ export const projects = [
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/lh19l9ryetucsfaqdjya',
     stack: ['Javascript', 'HTML', 'CSS', 'Wix'],
-  },
-  {
-    name: 'Habit Hatcher',
-    description:
-      'A to-do list with a twist! Complete your tasks to hatch 10 different monsters!',
-    link: {
-      href: 'https://habit-hatcher.onrender.com/',
-      label: 'Live link',
-    },
-    github: {
-      href: 'https://github.com/Galitie/habit-hatcher',
-      label: 'GitHub',
-    },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/vk7vhoihgnpi8dwkm1cp',
-    stack: ['React', 'CSS', 'Local Storage', 'JSX'],
   },
 ]
 
