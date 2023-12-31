@@ -1,5 +1,4 @@
 const typographyPlugin = require('@tailwindcss/typography')
-
 const typographyStyles = require('./typography')
 
 /** @type {import('tailwindcss').Config} */

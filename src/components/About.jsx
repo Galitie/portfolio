@@ -60,7 +60,6 @@ export default function About() {
               When I'm not making websites, you can find me{' '}
               <Link
                 href="/games"
-                target="_blank"
                 className="text-teal-700 dark:text-teal-400 dark:hover:text-zinc-300"
               >
                 participating in a game jam

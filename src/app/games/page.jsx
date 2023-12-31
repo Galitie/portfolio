@@ -39,6 +39,10 @@ const games = [
     name: 'TYLERPG',
     description:
       'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal. TYLERPG is a novel game that spans genres from RPG to dating simulator.',
+    link: {
+      href: 'https://docs.google.com/presentation/d/e/2PACX-1vQfGEuVvPQ-S-way-OkObqxQei7gSY5IgEJlmVCQ9Kcz0fbXVpi650R8S4r9780Yo0_D6dbrCnkQxVt/pub?start=false&loop=false&delayms=3000',
+      label: 'Preview',
+    },
     github: {
       href: 'https://github.com/Galitie/async-mobile-client-app',
       label: 'GitHub',
@@ -66,6 +70,10 @@ const games = [
     description:
       'Titans of Gross Anatomy is a work in progress. TOGA is a  fusion of a first-person rail shooter and an anatomy education game for your mobile device.',
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/chrj0w99teskstvdigro',
+    link: {
+      href: 'https://docs.google.com/presentation/d/e/2PACX-1vSKlVLfMYmi8H819QSpq4Mn1YCCyADltH_GkYiRbH_pQDt34Arz_Sg-HrRnqAEBdgHgpnLrld2H-Xgw/pub?start=false&loop=false&delayms=3000',
+      label: 'Preview',
+    },
     stack: ['Godot', 'Blender'],
   },
 ]
