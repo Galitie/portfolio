@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Card } from '@/components/Card'
 import { Cloudinary } from '@cloudinary/url-gen'
 import Socials from '@/components/Socials'
 
@@ -11,6 +12,24 @@ import logoVC from '@/images/logos/virtualchair_logo.jpeg'
 import FeaturedProject from '@/components/FeaturedProject'
 import About from '@/components/About'
 import { Photos } from '@/components/Photos'
+
+export const tools = [
+  'JavaScript',
+  'JSX',
+  'TypeScript',
+  'Python',
+  'HTML',
+  'CSS',
+  'GDScript',
+  'React',
+  'Next.js',
+  'Node',
+  'MongoDB',
+  'REST API',
+  'Tailwind',
+  'Git/GitHub',
+  'Wordpress',
+]
 
 function BriefcaseIcon(props) {
   return (
@@ -118,7 +137,7 @@ function Resume() {
       <div>
         <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
           <BriefcaseIcon className="h-6 w-6 flex-none" />
-          <span className="ml-3">Work</span>
+          <span className="ml-3">Work History</span>
         </h2>
         <ol className="mt-6 space-y-4">
           {resume.map((role, roleIndex) => (
@@ -157,36 +176,39 @@ export default async function Home() {
             Not only do I love to code, but I am passionate about UX, human
             first design, and interactive and gamified experiences.
           </p>
-          <Socials />
-          <div className="flex gap-6">
-            <Button
-              href="/projects"
-              variant="secondary"
-              className="group mt-6 dark:text-teal-300"
-            >
-              View All Projects
-              <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
-            </Button>
-            <Button
-              href="https://docs.google.com/document/d/14-UH9hPYvC_GFtm55zFInI8R3mKKiXDvwkDXawYMegY/edit?usp=sharing"
-              variant="secondary"
-              className="group mt-6 dark:text-teal-300"
-              target="_blank"
-            >
-              Download Resume
-              <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
-            </Button>
+          <div className="pt-1">
+            <Card.Badge>{tools}</Card.Badge>
           </div>
+          <Socials />
+        </div>
+        <div className="flex gap-6">
+          <Button
+            href="/projects"
+            variant="secondary"
+            className="group mt-6 dark:text-teal-300"
+          >
+            View All Work
+            <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+          </Button>
+          <Button
+            href="https://docs.google.com/document/d/14-UH9hPYvC_GFtm55zFInI8R3mKKiXDvwkDXawYMegY/edit?usp=sharing"
+            variant="secondary"
+            className="group mt-6 dark:text-teal-300"
+            target="_blank"
+          >
+            Download Resume
+            <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
+          </Button>
         </div>
       </Container>
       <Photos />
-      <About />
       <Container className="mt-24 md:mt-24">
         <div className="flex flex-wrap justify-center gap-6">
           <FeaturedProject />
           <Resume />
         </div>
       </Container>
+      <About />
     </>
   )
 }

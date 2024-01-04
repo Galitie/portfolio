@@ -58,7 +58,7 @@ export default function FeaturedProject() {
     >
       <h2 className=" mb-4 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <HeartIcon />
-        <span className="ml-3">Featured Project</span>
+        <span className="ml-3">Featured Work</span>
       </h2>
       <Image
         src={featuredProject.logo}
@@ -115,7 +115,7 @@ export default function FeaturedProject() {
         variant="secondary"
         className="group mt-6 w-full dark:text-teal-300"
       >
-        View All Projects
+        View All Work
         <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
       </Button>
     </Card>
