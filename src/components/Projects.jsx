@@ -15,6 +15,21 @@ export const projects = [
     stack: ['Wordpress', 'HTML', 'CSS', 'Elementor'],
   },
   {
+    name: 'Corner Pocket',
+    description:
+      'Currently a work in progress - A dance registration site made by and for Lindy Hoppers. I am responsible for creating components such as modals for the site.',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/q3w61rufkefm5dil3kwl',
+    stack: ['React', 'Nextjs', 'Tailwind CSS', 'Docker', 'JSX'],
+  },
+  {
+    name: 'Flouer Dances',
+    description:
+      'A multi-page website for Flouer who has a Dance and Embodiment business.',
+    link: { href: 'https://flouerdances.com/', label: 'Live link' },
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1705010311/website/website_icon_jclleh.png',
+    stack: ['Wordpress', 'HTML', 'CSS', 'Elementor'],
+  },
+  {
     name: 'Portfolio',
     description:
       "You're looking at it - This personal website! Pretty neat, huh?",
@@ -25,13 +40,6 @@ export const projects = [
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/snlnelz09qyzgwyqdnf7',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'JSX'],
-  },
-  {
-    name: 'Corner Pocket',
-    description:
-      'Currently a work in progress - A dance registration site made by and for Lindy Hoppers. I am responsible for creating components such as modals for the site.',
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/q3w61rufkefm5dil3kwl',
-    stack: ['React', 'Nextjs', 'Tailwind CSS', 'Docker', 'JSX'],
   },
   {
     name: 'Shamrock Government Solutions',
