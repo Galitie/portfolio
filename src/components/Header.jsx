@@ -226,7 +226,7 @@ function SparkleIcon(props) {
 function Avatar({ large = false, className, ...props }) {
   return (
     <Link
-      href="#"
+      href="https://www.galitie.com"
       className={clsx(className, 'pointer-events-auto')}
       {...props}
     >

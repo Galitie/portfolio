@@ -7,7 +7,7 @@ export const metadata = {
   title: {
     template: '%s - Galit Weinfeld',
     default:
-      'Galit Weinfeld - Software Engineer and Web Developer hobbiest game designer.',
+      'Galit Weinfeld - Software Engineer, Web Developer Hobbiest Game Designer.',
   },
   description:
     "I’m Galit, a software engineer and web developer based in New York City. I'm passionate about interactive and gamified experiences.",

@@ -36,7 +36,7 @@ export default function About() {
               When I'm not making websites, you can find me{' '}
               <Link
                 href="/games"
-                className="text-teal-700 dark:text-teal-400 dark:hover:text-zinc-300"
+                className="text-teal-700 underline dark:text-teal-400 dark:hover:text-zinc-300"
               >
                 participating in a game jam
               </Link>
@@ -44,7 +44,7 @@ export default function About() {
               <Link
                 href="https://www.instagram.com/galit_ie/"
                 target="_blank"
-                className="text-teal-700 dark:text-teal-400 dark:hover:text-zinc-300"
+                className="text-teal-700 underline dark:text-teal-400 dark:hover:text-zinc-300"
               >
                 face painting
               </Link>{' '}
@@ -52,7 +52,7 @@ export default function About() {
               <Link
                 href="https://www.youtube.com/watch?v=j933cA2Aq1g&ab_channel=GalitDances"
                 target="_blank"
-                className="text-teal-700 dark:text-teal-400 dark:hover:text-zinc-300"
+                className="text-teal-700 underline dark:text-teal-400 dark:hover:text-zinc-300"
               >
                 dancing lindy hop.{' '}
               </Link>
