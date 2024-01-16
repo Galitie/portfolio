@@ -7,7 +7,6 @@ import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
-
 import { Container } from '@/components/Container'
 
 function CloseIcon(props) {
@@ -224,15 +223,7 @@ function SparkleIcon(props) {
 }
 
 function Avatar({ large = false, className, ...props }) {
-  return (
-    <Link
-      href="https://www.galitie.com"
-      className={clsx(className, 'pointer-events-auto')}
-      {...props}
-    >
-      <SparkleIcon />
-    </Link>
-  )
+  return <SparkleIcon />
 }
 
 export function Header() {
