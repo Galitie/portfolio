@@ -127,6 +127,7 @@ export default function Projects() {
                     href={project.link.href}
                     className="ml-2"
                     target="_blank"
+                    label={'Live Link to' + ' ' + project.name}
                   >
                     {project.link.label}
                   </Link>
@@ -146,6 +147,7 @@ export default function Projects() {
                     href={project.github.href}
                     className="ml-2"
                     target="_blank"
+                    label={'Github link to' + ' ' + project.name}
                   >
                     {project.github.label}
                   </Link>

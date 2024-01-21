@@ -3,7 +3,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const games = [
+export const games = [
   {
     name: 'Cat Summoner',
     description:
@@ -115,7 +115,7 @@ export default function Games() {
                 <Image
                   src={game.logo}
                   alt=""
-                  className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover object-cover dark:bg-zinc-800"
+                  className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
                   width="300"
                   height="300"
                 />
@@ -138,6 +138,7 @@ export default function Games() {
                       href={game.link.href}
                       className="ml-2"
                       target="_blank"
+                      label={'Live Link to' + ' ' + game.name}
                     >
                       {game.link.label}
                     </Link>
@@ -157,6 +158,7 @@ export default function Games() {
                       href={game.github.href}
                       className="ml-2"
                       target="_blank"
+                      label={'Github to' + ' ' + game.name}
                     >
                       {game.github.label}
                     </Link>
