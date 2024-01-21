@@ -103,6 +103,7 @@ export default function FeaturedProject() {
             href={featuredProject.github.href}
             className="ml-2"
             target="_blank"
+            label="Live link to featured work"
           >
             {featuredProject.github.label}
           </Link>
