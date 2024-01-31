@@ -10,11 +10,11 @@ export const games = [
       'Summon cute and devilish cats by making sets with magical runes! See if you can beat all 10 challenging levels!',
     link: {
       href: 'https://galitie.itch.io/cat-summoner',
-      label: 'Play me!',
+      label: `Play Cat Summoner`,
     },
     github: {
       href: 'https://github.com/raamweinfeld/Cat-Summoner',
-      label: 'GitHub',
+      label: 'GitHub for Cat Summoner',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/dj4vnmopcq7lahqbwtzf',
     stack: ['Godot'],
@@ -26,11 +26,11 @@ export const games = [
       'The challenge was to make a 20 second game in a short amount of time! We created a clicker game about helping a cat chase away distracting thoughts and reach Meowvana.',
     link: {
       href: 'https://galitie.itch.io/meowvana',
-      label: 'Play me!',
+      label: 'Play Meowvana',
     },
     github: {
       href: 'https://github.com/Galitie/20-sec-game-jam/tree/playtest',
-      label: 'GitHub',
+      label: 'GitHub for Meowvana',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/meowvana_ehhz4u',
     stack: ['Godot'],
@@ -41,11 +41,11 @@ export const games = [
       'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal. TYLERPG is a novel game that spans genres from RPG to dating simulator.',
     link: {
       href: 'https://github.com/Galitie/async-mobile-client-app/assets/105133862/f9fda7ab-785f-42a9-bfa7-1f96a9d03eeb',
-      label: 'Preview',
+      label: 'Preview TYLERPG',
     },
     github: {
       href: 'https://github.com/Galitie/async-mobile-client-app',
-      label: 'GitHub',
+      label: 'GitHub for TYLERPG',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/vvdpjyztabulddaz8xsw',
     stack: ['JavaScript', 'CSS', 'Godot', 'AWS'],
@@ -56,11 +56,11 @@ export const games = [
       'A to-do list with a twist! Complete your tasks to hatch 10 different monsters!',
     link: {
       href: 'https://habit-hatcher.onrender.com/',
-      label: 'Live link',
+      label: 'Live link to Habit Hatcher',
     },
     github: {
       href: 'https://github.com/Galitie/habit-hatcher',
-      label: 'GitHub',
+      label: 'GitHub for Habit Hatcher',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/vk7vhoihgnpi8dwkm1cp',
     stack: ['React', 'CSS', 'Local Storage', 'JSX'],
@@ -129,41 +129,36 @@ export default function Games() {
                 <Card.Badge>{game.stack}</Card.Badge>
                 <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500 ">
                   {game.link ? (
-                    <LinkIcon className="h-6 w-6 flex-none" />
+                    <>
+                      <LinkIcon className="h-6 w-6 flex-none" />
+                      <Link
+                        href={game.link.href}
+                        className="ml-2"
+                        target="_blank"
+                        aria-label={game.link.label}
+                      >
+                        Live Link
+                      </Link>
+                    </>
                   ) : (
-                    console.log('hmmm')
-                  )}
-                  {game.link ? (
-                    <Link
-                      href={game.link.href}
-                      className="ml-2"
-                      target="_blank"
-                      label={'Live Link to' + ' ' + game.name}
-                    >
-                      {game.link.label}
-                    </Link>
-                  ) : (
-                    console.log('hmmm')
+                    console.log('No game link')
                   )}
                 </p>
                 <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500">
                   {game.github ? (
-                    <LinkIcon className="h-6 w-6 flex-none" />
+                    <>
+                      <LinkIcon className="h-6 w-6 flex-none" />
+                      <Link
+                        href={game.github.href}
+                        className="ml-2"
+                        target="_blank"
+                        aria-label={game.github.label}
+                      >
+                        GitHub
+                      </Link>
+                    </>
                   ) : (
-                    console.log('hmmm')
-                  )}
-
-                  {game.github ? (
-                    <Link
-                      href={game.github.href}
-                      className="ml-2"
-                      target="_blank"
-                      label={'Github to' + ' ' + game.name}
-                    >
-                      {game.github.label}
-                    </Link>
-                  ) : (
-                    console.log('hmmm')
+                    console.log('no github link')
                   )}
                 </p>
               </div>

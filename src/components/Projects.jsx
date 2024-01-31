@@ -9,7 +9,7 @@ export const projects = [
       'A multi-page website for a photography awards site, which includes users and photo submission forms.',
     link: {
       href: 'https://elopementphotographyawards.com/',
-      label: 'Live link',
+      label: 'Live link to Elopement Photography Awards',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1//website/AwardCircleInstagram_ihuwrp',
     stack: ['Wordpress', 'HTML', 'CSS', 'Elementor'],
@@ -25,7 +25,10 @@ export const projects = [
     name: 'Flouer Dances',
     description:
       'A multi-page website for Flouer who has a Dance and Embodiment business.',
-    link: { href: 'https://flouerdances.com/', label: 'Live link' },
+    link: {
+      href: 'https://flouerdances.com/',
+      label: 'Live link to Flouer Dances',
+    },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1705010311/website/website_icon_jclleh.png',
     stack: ['Wordpress', 'HTML', 'CSS', 'Elementor'],
   },
@@ -33,10 +36,10 @@ export const projects = [
     name: 'Portfolio',
     description:
       "You're looking at it - This personal website! Pretty neat, huh?",
-    link: { href: 'https://www.Galitie.com', label: 'Live link' },
+    link: { href: 'https://www.Galitie.com', label: 'Live link to Portfolio' },
     github: {
       href: 'https://github.com/Galitie/portfolio',
-      label: 'GitHub',
+      label: 'GitHub for Portfolio',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/snlnelz09qyzgwyqdnf7',
     stack: ['React', 'Nextjs', 'Tailwind CSS', 'JSX'],
@@ -47,7 +50,7 @@ export const projects = [
       'A clean one page website for a client specializing in C Suite level consulting expertise for growing & transitioning companies.',
     link: {
       href: 'https://shamrockgovermentsolutions.com/',
-      label: 'Live link',
+      label: 'Live link to Shamrock Government Solutions',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/usqrmsqfbc6qgoppjyyj',
     stack: ['Wordpress', 'HTML', 'CSS', 'Elementor'],
@@ -58,7 +61,7 @@ export const projects = [
       'A single page site for Katherine Lund, a professional actor and model based in NYC.',
     link: {
       href: 'https://www.kathrinelund.com/',
-      label: 'Live link',
+      label: 'Live link to Katherine Lund',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/tlqdj4smsmvti2mpuoht',
     stack: ['HTML', 'CSS', 'Google Sites'],
@@ -69,7 +72,7 @@ export const projects = [
       'A multi-page site for an academic conference production company.',
     link: {
       href: 'https://www.virtualchair.net/',
-      label: 'Live link',
+      label: 'Live link to Virtual Chair',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/lh19l9ryetucsfaqdjya',
     stack: ['Javascript', 'HTML', 'CSS', 'Wix'],
@@ -117,42 +120,36 @@ export default function Projects() {
               <Card.Badge>{project.stack}</Card.Badge>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500 ">
                 {project.link ? (
-                  <LinkIcon className="h-6 w-6 flex-none" />
+                  <>
+                    <LinkIcon className="h-6 w-6 flex-none" />
+                    <Link
+                      href={project.link.href}
+                      className="ml-2"
+                      target="_blank"
+                      aria-label={project.link.label}
+                    >
+                      Live link
+                    </Link>
+                  </>
                 ) : (
-                  console.log('hmmm')
-                )}
-
-                {project.link ? (
-                  <Link
-                    href={project.link.href}
-                    className="ml-2"
-                    target="_blank"
-                    label={'Live Link to' + ' ' + project.name}
-                  >
-                    {project.link.label}
-                  </Link>
-                ) : (
-                  console.log('hmmm')
+                  console.log('No project link')
                 )}
               </p>
               <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500">
                 {project.github ? (
-                  <LinkIcon className="h-6 w-6 flex-none" />
+                  <>
+                    <LinkIcon className="h-6 w-6 flex-none" />
+                    <Link
+                      href={project.github.href}
+                      className="ml-2"
+                      target="_blank"
+                      aria-label={project.github.label}
+                    >
+                      GitHub
+                    </Link>
+                  </>
                 ) : (
-                  console.log('hmmm')
-                )}
-
-                {project.github ? (
-                  <Link
-                    href={project.github.href}
-                    className="ml-2"
-                    target="_blank"
-                    label={'Github link to' + ' ' + project.name}
-                  >
-                    {project.github.label}
-                  </Link>
-                ) : (
-                  console.log('hmmm')
+                  console.log('no github link')
                 )}
               </p>
             </div>
