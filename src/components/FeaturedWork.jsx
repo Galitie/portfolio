@@ -99,7 +99,7 @@ export default function FeaturedWork() {
             href={featuredWork.github.href}
             className="ml-2"
             target="_blank"
-            label="Live link to featured work"
+            aria-label="Live link to featured work"
           >
             Github
           </Link>
