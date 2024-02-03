@@ -80,7 +80,12 @@ export default function FeaturedWork() {
         )}
 
         {featuredWork.link ? (
-          <Link href={featuredWork.link.href} className="ml-2" target="_blank">
+          <Link
+            href={featuredWork.link.href}
+            className="ml-2"
+            target="_blank"
+            aria-label="Live link to featured work"
+          >
             Live link
           </Link>
         ) : (
@@ -99,7 +104,7 @@ export default function FeaturedWork() {
             href={featuredWork.github.href}
             className="ml-2"
             target="_blank"
-            aria-label="Live link to featured work"
+            aria-label="Github link to featured work"
           >
             Github
           </Link>
