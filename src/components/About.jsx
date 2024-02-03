@@ -3,6 +3,24 @@ import Image from 'next/image'
 import { Card } from './Card'
 import { Container } from '@/components/Container'
 
+export const tools = [
+  'JavaScript',
+  'JSX',
+  'TypeScript',
+  'Python',
+  'HTML',
+  'CSS',
+  'GDScript',
+  'React',
+  'Next.js',
+  'Node',
+  'MongoDB',
+  'REST API',
+  'Tailwind',
+  'Git/GitHub',
+  'Wordpress',
+]
+
 export default function About() {
   const profilePic =
     'https://res.cloudinary.com/driui30ox/image/upload/q_50//v1/website/x5evgy7znrlaoaqjhr7b'
@@ -57,6 +75,9 @@ export default function About() {
                 dancing lindy hop.{' '}
               </Link>
             </p>
+            <div className="pt-1">
+              <Card.Badge>{tools}</Card.Badge>
+            </div>
           </div>
         </div>
       </div>

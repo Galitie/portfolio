@@ -175,9 +175,6 @@ export default async function Home() {
             Not only do I love to code, but I am passionate about UX, human
             first design, and interactive and gamified experiences.
           </p>
-          <div className="pt-1">
-            <Card.Badge>{tools}</Card.Badge>
-          </div>
           <Socials />
         </div>
         <div className="flex gap-6">
@@ -200,6 +197,7 @@ export default async function Home() {
           </Button>
         </div>
       </Container>
+
       <Photos />
       <Container className="mt-24 md:mt-24">
         <div className="flex flex-wrap justify-center gap-6">
