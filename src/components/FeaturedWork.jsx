@@ -112,7 +112,7 @@ export default function FeaturedWork() {
         variant="secondary"
         className="group mt-6 w-full dark:text-teal-300"
       >
-        View All Work
+        View Portfolio
         <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
       </Button>
     </Card>
