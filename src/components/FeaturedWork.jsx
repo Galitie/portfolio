@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import { Card } from '@/components/Card'
 import Link from 'next/link'
-import { projects } from '@/components/Projects'
+import { work } from '@/components/Work'
 import { Button } from './Button'
 
-const featuredProject = projects[0]
+const featuredWork = work[0]
 
 function LinkIcon(props) {
   return (
@@ -49,11 +49,11 @@ function ArrowDownIcon(props) {
   )
 }
 
-export default function FeaturedProject() {
+export default function FeaturedWork() {
   return (
     <Card
       as="li"
-      key={featuredProject.name}
+      key={featuredWork.name}
       className="max-w-sm rounded-2xl border border-zinc-100 p-5 p-6 transition duration-200 dark:border-zinc-700/40 dark:bg-zinc-900 "
     >
       <h2 className=" mb-4 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -61,51 +61,47 @@ export default function FeaturedProject() {
         <span className="ml-3">Featured Work</span>
       </h2>
       <Image
-        src={featuredProject.logo}
+        src={featuredWork.logo}
         alt=""
         className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover object-cover dark:bg-zinc-800"
         width="300"
         height="300"
       />
       <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-        <p>{featuredProject.name}</p>
+        <p>{featuredWork.name}</p>
       </h2>
-      <Card.Description>{featuredProject.description}</Card.Description>
-      <Card.Badge>{featuredProject.stack}</Card.Badge>
+      <Card.Description>{featuredWork.description}</Card.Description>
+      <Card.Badge>{featuredWork.stack}</Card.Badge>
       <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500">
-        {featuredProject.link ? (
+        {featuredWork.link ? (
           <LinkIcon className="h-6 w-6 flex-none" />
         ) : (
           console.log('hmmm')
         )}
 
-        {featuredProject.link ? (
-          <Link
-            href={featuredProject.link.href}
-            className="ml-2"
-            target="_blank"
-          >
-            {featuredProject.link.label}
+        {featuredWork.link ? (
+          <Link href={featuredWork.link.href} className="ml-2" target="_blank">
+            {featuredWork.link.label}
           </Link>
         ) : (
           console.log('hmmm')
         )}
       </p>
       <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500">
-        {featuredProject.github ? (
+        {featuredWork.github ? (
           <LinkIcon className="h-6 w-6 flex-none" />
         ) : (
           console.log('hmmm')
         )}
 
-        {featuredProject.github ? (
+        {featuredWork.github ? (
           <Link
-            href={featuredProject.github.href}
+            href={featuredWork.github.href}
             className="ml-2"
             target="_blank"
             label="Live link to featured work"
           >
-            {featuredProject.github.label}
+            {featuredWork.github.label}
           </Link>
         ) : (
           console.log('hmmm')

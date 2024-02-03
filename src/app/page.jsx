@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { Card } from '@/components/Card'
 import { Cloudinary } from '@cloudinary/url-gen'
 import Socials from '@/components/Socials'
@@ -9,7 +8,7 @@ import { Container } from '@/components/Container'
 import logoDevs from '@/images/logos/100devs_logo.jpeg'
 import logoSOA from '@/images/logos/SOA_logo.jpeg'
 import logoVC from '@/images/logos/virtualchair_logo.jpeg'
-import FeaturedProject from '@/components/FeaturedProject'
+import FeaturedWork from '@/components/FeaturedWork'
 import About from '@/components/About'
 import { Photos } from '@/components/Photos'
 
@@ -204,7 +203,7 @@ export default async function Home() {
       <Photos />
       <Container className="mt-24 md:mt-24">
         <div className="flex flex-wrap justify-center gap-6">
-          <FeaturedProject />
+          <FeaturedWork />
           <Resume />
         </div>
       </Container>

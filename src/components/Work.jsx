@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import Link from 'next/link'
 
-export const projects = [
+export const work = [
   {
     name: 'Elopement Photography Awards',
     description:
@@ -90,60 +90,60 @@ function LinkIcon(props) {
   )
 }
 
-export default function Projects() {
+export default function Work() {
   return (
     <ul
       role="list"
       className="grid grid-cols-1 gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
     >
-      {projects.map((project) => (
+      {work.map((client) => (
         <Card
           as="li"
-          key={project.name}
+          key={client.name}
           className="rounded-2xl border border-zinc-200 p-5 transition duration-200 hover:bg-zinc-200 dark:border-zinc-800 dark:hover:bg-zinc-800"
         >
           <div className="flex h-full flex-col justify-between">
             <div>
               <Image
-                src={project.logo}
+                src={client.logo}
                 alt=""
                 className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
                 width="300"
                 height="300"
               />
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <p>{project.name}</p>
+                <p>{client.name}</p>
               </h2>
-              <Card.Description>{project.description}</Card.Description>
+              <Card.Description>{client.description}</Card.Description>
             </div>
             <div>
-              <Card.Badge>{project.stack}</Card.Badge>
+              <Card.Badge>{client.stack}</Card.Badge>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500 ">
-                {project.link ? (
+                {client.link ? (
                   <>
                     <LinkIcon className="h-6 w-6 flex-none" />
                     <Link
-                      href={project.link.href}
+                      href={client.link.href}
                       className="ml-2"
                       target="_blank"
-                      aria-label={project.link.label}
+                      aria-label={client.link.label}
                     >
                       Live link
                     </Link>
                   </>
                 ) : (
-                  console.log('No project link')
+                  console.log('No client link')
                 )}
               </p>
               <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500">
-                {project.github ? (
+                {client.github ? (
                   <>
                     <LinkIcon className="h-6 w-6 flex-none" />
                     <Link
-                      href={project.github.href}
+                      href={client.github.href}
                       className="ml-2"
                       target="_blank"
-                      aria-label={project.github.label}
+                      aria-label={client.github.label}
                     >
                       GitHub
                     </Link>
