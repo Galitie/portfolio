@@ -81,7 +81,7 @@ export default function FeaturedWork() {
 
         {featuredWork.link ? (
           <Link href={featuredWork.link.href} className="ml-2" target="_blank">
-            {featuredWork.link.label}
+            Live link
           </Link>
         ) : (
           console.log('hmmm')
@@ -101,14 +101,14 @@ export default function FeaturedWork() {
             target="_blank"
             label="Live link to featured work"
           >
-            {featuredWork.github.label}
+            Github
           </Link>
         ) : (
           console.log('hmmm')
         )}
       </p>
       <Button
-        href="/projects"
+        href="/portfolio"
         variant="secondary"
         className="group mt-6 w-full dark:text-teal-300"
       >

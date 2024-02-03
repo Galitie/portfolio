@@ -182,7 +182,7 @@ export default async function Home() {
         </div>
         <div className="flex gap-6">
           <Button
-            href="/projects"
+            href="/portfolio"
             variant="secondary"
             className="group mt-6 dark:text-teal-300"
           >
