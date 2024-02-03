@@ -78,7 +78,7 @@ function SocialLink({ icon: Icon, text, ...props }) {
 
 export default function Socials() {
   return (
-    <div className="mt-6 flex flex-wrap gap-6">
+    <div className=" mt-6 flex flex-wrap gap-6">
       <SocialLink
         href="https://www.linkedin.com/in/galit-weinfeld/"
         aria-label="Follow on LinkedIn"

@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { Cloudinary } from '@cloudinary/url-gen'
 import Socials from '@/components/Socials'
-
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import logoDevs from '@/images/logos/100devs_logo.jpeg'
@@ -11,24 +10,6 @@ import logoVC from '@/images/logos/virtualchair_logo.jpeg'
 import FeaturedWork from '@/components/FeaturedWork'
 import About from '@/components/About'
 import { Photos } from '@/components/Photos'
-
-export const tools = [
-  'JavaScript',
-  'JSX',
-  'TypeScript',
-  'Python',
-  'HTML',
-  'CSS',
-  'GDScript',
-  'React',
-  'Next.js',
-  'Node',
-  'MongoDB',
-  'REST API',
-  'Tailwind',
-  'Git/GitHub',
-  'Wordpress',
-]
 
 function BriefcaseIcon(props) {
   return (
