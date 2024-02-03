@@ -3,6 +3,11 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import Image from 'next/image'
 import Link from 'next/link'
 
+export const metadata = {
+  title: 'Games',
+  description: 'Games I have created.',
+}
+
 export const games = [
   {
     name: 'Cat Summoner',
@@ -87,11 +92,6 @@ function LinkIcon(props) {
       />
     </svg>
   )
-}
-
-export const metadata = {
-  title: 'Games',
-  description: 'Games I have created.',
 }
 
 export default function Games() {
