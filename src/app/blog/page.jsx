@@ -22,14 +22,14 @@ const postsPreview = [
   },
   {
     id: 2,
-    title: 'Make Beautiful Websites - Elementor for Wordpress',
-    href: 'blog/elementor',
+    title: 'This is a placeholder for a future post',
+    href: 'blog/template',
     description:
-      'Is your website editor on Wordpress not giving you enough options? I reccommend the Elementor plugin with two thumbs way up.',
+      'This is a placeholder for a future post about web developement or game development!',
     imageUrl:
-      'https://elementor.com/cdn-cgi/image/f=auto,w=651/https://elementor.com/wp-content/uploads/2021/05/Create-Websites-image-1-1.png',
-    date: 'Feb 6th, 2024',
-    datetime: '2024-02-06',
+      'https://elementor.com/cdn-cgi/image/f=auto,w=650/https://elementor.com/wp-content/uploads/2021/05/Create-Websites-image-2-1.png',
+    date: 'Feb 7th, 2024',
+    datetime: '2024-02-07',
   },
   // More posts...
 ]
@@ -47,7 +47,7 @@ export default function Blog() {
               {postsPreview.map((post) => (
                 <article
                   key={post.id}
-                  className="relative isolate flex flex-col gap-8 lg:flex-row"
+                  className="relative isolate flex flex-col gap-8 rounded-2xl border p-5 transition duration-200 dark:border-zinc-800 dark:hover:bg-zinc-800 lg:flex-row"
                 >
                   <Link href={post.href}>
                     <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
