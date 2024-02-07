@@ -121,7 +121,7 @@ export default function Work() {
               >
                 <Image
                   src={client.logo}
-                  alt=""
+                  alt={client.link ? client.link.label : ''}
                   className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
                   width="300"
                   height="300"
