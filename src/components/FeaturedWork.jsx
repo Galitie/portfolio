@@ -76,7 +76,7 @@ export default function FeaturedWork() {
       >
         <Image
           src={featuredWork.logo}
-          alt=""
+          alt={featuredWork.link.label}
           className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
           width="300"
           height="300"
