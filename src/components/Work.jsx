@@ -117,7 +117,7 @@ export default function Work() {
                   client.link ? { cursor: 'pointer' } : { cursor: 'default' }
                 }
                 aria-label={client.link ? client.link.label : ''}
-                alt={client.link ? client.link.label : ''}
+                alt={client.link ? client.link.label : 'Work preview image'}
               >
                 <Image
                   src={client.logo}
