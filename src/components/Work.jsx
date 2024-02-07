@@ -112,7 +112,10 @@ export default function Work() {
                     ? client.link.github
                     : ''
                 }
-                target={client.link ? '_blank' : '_self'}
+                target={client.link ? '_blank' : ''}
+                style={
+                  client.link ? { cursor: 'pointer' } : { cursor: 'default' }
+                }
               >
                 <Image
                   src={client.logo}

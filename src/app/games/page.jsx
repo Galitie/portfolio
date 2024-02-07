@@ -120,7 +120,10 @@ export default function Games() {
                       ? game.link.github
                       : ''
                   }
-                  target={game.link ? '_blank' : '_self'}
+                  target={game.link ? '_blank' : ''}
+                  style={
+                    game.link ? { cursor: 'pointer' } : { cursor: 'default' }
+                  }
                 >
                   <Image
                     src={game.logo}
