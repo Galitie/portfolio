@@ -20,6 +20,17 @@ const postsPreview = [
     date: 'Feb 6th, 2024',
     datetime: '2024-02-06',
   },
+  {
+    id: 2,
+    title: 'Make Beautiful Websites - Elementor for Wordpress',
+    href: 'blog/elementor',
+    description:
+      'Is your website editor on Wordpress not giving you enough options? I reccommend the Elementor plugin with two thumbs way up.',
+    imageUrl:
+      'https://elementor.com/cdn-cgi/image/f=auto,w=651/https://elementor.com/wp-content/uploads/2021/05/Create-Websites-image-1-1.png',
+    date: 'Feb 6th, 2024',
+    datetime: '2024-02-06',
+  },
   // More posts...
 ]
 
