@@ -2,6 +2,7 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Button } from '@/components/Button'
 
 export const metadata = {
   title: 'Elementor and Wordpress',
@@ -135,6 +136,13 @@ export default function Page() {
             neque erat velit.
           </p>
         </div>
+        <Button
+          href="/blog"
+          variant="secondary"
+          className="group mt-6 dark:text-teal-300"
+        >
+          Back to Blog Posts
+        </Button>
       </div>
     </SimpleLayout>
   )
