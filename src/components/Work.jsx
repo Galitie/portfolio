@@ -104,13 +104,24 @@ export default function Work() {
         >
           <div className="flex h-full flex-col justify-between">
             <div>
-              <Image
-                src={client.logo}
-                alt=""
-                className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-                width="300"
-                height="300"
-              />
+              <a
+                href={
+                  client.link
+                    ? client.link.href
+                    : client.link
+                    ? client.link.github
+                    : ''
+                }
+                target={client.link ? '_blank' : '_self'}
+              >
+                <Image
+                  src={client.logo}
+                  alt=""
+                  className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                  width="300"
+                  height="300"
+                />
+              </a>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                 <p>{client.name}</p>
               </h2>

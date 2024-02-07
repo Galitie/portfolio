@@ -45,11 +45,11 @@ export const games = [
     description:
       'A Jackbox-like game where up to 5 mobile users can connect to the game through a mobile website portal. TYLERPG is a novel game that spans genres from RPG to dating simulator.',
     link: {
-      href: 'https://github.com/Galitie/async-mobile-client-app/assets/105133862/f9fda7ab-785f-42a9-bfa7-1f96a9d03eeb',
+      href: 'https://drive.google.com/file/d/1_8DpZnU-DipMaxS95fyMPhdro7AFaEXI/view',
       label: 'Preview TYLERPG',
     },
     github: {
-      href: 'https://github.com/Galitie/async-mobile-client-app',
+      href: 'https://github.com/Galitie/async-mobile-game-app',
       label: 'GitHub for TYLERPG',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/vvdpjyztabulddaz8xsw',
@@ -112,13 +112,24 @@ export default function Games() {
           >
             <div className="flex h-full flex-col justify-between">
               <div>
-                <Image
-                  src={game.logo}
-                  alt=""
-                  className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-                  width="300"
-                  height="300"
-                />
+                <a
+                  href={
+                    game.link
+                      ? game.link.href
+                      : game.link
+                      ? game.link.github
+                      : ''
+                  }
+                  target={game.link ? '_blank' : '_self'}
+                >
+                  <Image
+                    src={game.logo}
+                    alt=""
+                    className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                    width="300"
+                    height="300"
+                  />
+                </a>
                 <h2 className="mt-1 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                   {game.name}
                 </h2>
@@ -137,7 +148,7 @@ export default function Games() {
                         target="_blank"
                         aria-label={game.link.label}
                       >
-                        Live Link
+                        Play / Preview
                       </Link>
                     </>
                   ) : (
