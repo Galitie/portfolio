@@ -54,7 +54,7 @@ export default function FeaturedWork() {
     <Card
       as="li"
       key={featuredWork.name}
-      className="max-w-sm rounded-2xl border border-zinc-100 p-5 p-6 transition duration-200 dark:border-zinc-700/40 dark:bg-zinc-900 "
+      className="max-w-sm rounded-2xl border border-zinc-100 p-6 transition duration-200 dark:border-zinc-700/40 dark:bg-zinc-900 "
     >
       <h2 className=" mb-4 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <HeartIcon />
@@ -76,7 +76,7 @@ export default function FeaturedWork() {
         <Image
           src={featuredWork.logo}
           alt=""
-          className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover object-cover dark:bg-zinc-800"
+          className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
           width="300"
           height="300"
         />
