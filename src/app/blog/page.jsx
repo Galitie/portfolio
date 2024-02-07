@@ -11,23 +11,14 @@ export const metadata = {
 const postsPreview = [
   {
     id: 1,
-    title: 'Coming Soon',
-    href: 'post/coming-soon',
-    description: 'Coming soon!',
+    title: 'Elementor and Wordpress',
+    href: 'blog/elementor',
+    description:
+      'Is your website editor not giving you enough options? Try Elementor!',
     imageUrl:
       'https://res.cloudinary.com/driui30ox/image/upload/c_scale,h_500,w_500/q_50/website/d10pv5e9nzg9kxqin7ns.jpg',
-    date: 'Feb 3rd, 2024',
-    datetime: '2024-02-03',
-  },
-  {
-    id: 2,
-    title: 'Coming Soon',
-    href: 'post/coming-soon',
-    description: 'Coming soon!',
-    imageUrl:
-      'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/snlnelz09qyzgwyqdnf7',
-    date: 'Feb 4th, 2024',
-    datetime: '2024-04-03',
+    date: 'Feb 6th, 2024',
+    datetime: '2024-02-06',
   },
   // More posts...
 ]
