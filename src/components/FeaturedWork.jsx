@@ -72,6 +72,7 @@ export default function FeaturedWork() {
         style={
           featuredWork.link ? { cursor: 'pointer' } : { cursor: 'default' }
         }
+        aria-label="Live link to featured work"
       >
         <Image
           src={featuredWork.logo}

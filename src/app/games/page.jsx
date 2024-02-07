@@ -124,6 +124,7 @@ export default function Games() {
                   style={
                     game.link ? { cursor: 'pointer' } : { cursor: 'default' }
                   }
+                  aria-label={game.link.label}
                 >
                   <Image
                     src={game.logo}
