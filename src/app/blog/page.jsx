@@ -11,12 +11,12 @@ export const metadata = {
 const postsPreview = [
   {
     id: 1,
-    title: 'Elementor and Wordpress',
+    title: 'Make Beautiful Websites - Elementor for Wordpress',
     href: 'blog/elementor',
     description:
-      'Is your website editor not giving you enough options? Try Elementor!',
+      'Is your website editor on Wordpress not giving you enough options? I reccommend the Elementor plugin with two thumbs way up.',
     imageUrl:
-      'https://res.cloudinary.com/driui30ox/image/upload/c_scale,h_500,w_500/q_50/website/d10pv5e9nzg9kxqin7ns.jpg',
+      'https://elementor.com/cdn-cgi/image/f=auto,w=651/https://elementor.com/wp-content/uploads/2021/05/Create-Websites-image-1-1.png',
     date: 'Feb 6th, 2024',
     datetime: '2024-02-06',
   },

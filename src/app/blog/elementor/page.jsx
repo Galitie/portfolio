@@ -15,7 +15,8 @@ export default function Page() {
     <SimpleLayout>
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
         <p className="text-base font-semibold leading-7 text-zinc-400">
-          Is your wordpress editor kinda boring?
+          Is your wordpress editor holding you back from creating beautiful
+          websites?
         </p>
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
           Elementor plugin for Wordpress sites
@@ -110,7 +111,7 @@ export default function Page() {
         <figure className="mt-16">
           <img
             className="aspect-video rounded-xl bg-gray-50 object-cover"
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
+            src="https://elementor.com/cdn-cgi/image/f=auto,w=847,h=597/https://elementor.com/wp-content/uploads/2023/03/Group-1087165.png"
             alt=""
           />
           <figcaption className="mt-4 flex gap-x-2 text-sm leading-6 text-zinc-400">
