@@ -60,19 +60,33 @@ export default function FeaturedWork() {
         <HeartIcon />
         <span className="ml-3">Featured Work</span>
       </h2>
-      <Image
-        src={featuredWork.logo}
-        alt=""
-        className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover object-cover dark:bg-zinc-800"
-        width="300"
-        height="300"
-      />
+      <a
+        href={
+          featuredWork.link
+            ? featuredWork.link.href
+            : featuredWork.link
+            ? featuredWork.link.github
+            : ''
+        }
+        target={featuredWork.link ? '_blank' : ''}
+        style={
+          featuredWork.link ? { cursor: 'pointer' } : { cursor: 'default' }
+        }
+      >
+        <Image
+          src={featuredWork.logo}
+          alt=""
+          className="aspect-square w-full rounded-2xl bg-zinc-100 object-cover object-cover dark:bg-zinc-800"
+          width="300"
+          height="300"
+        />
+      </a>
       <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
         <p>{featuredWork.name}</p>
       </h2>
       <Card.Description>{featuredWork.description}</Card.Description>
       <Card.Badge>{featuredWork.stack}</Card.Badge>
-      <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500">
+      <p className="relative z-10 mt-4 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500">
         {featuredWork.link ? (
           <LinkIcon className="h-6 w-6 flex-none" />
         ) : (
