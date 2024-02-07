@@ -91,7 +91,7 @@ export default function FeaturedWork() {
         {featuredWork.link ? (
           <LinkIcon className="h-6 w-6 flex-none" />
         ) : (
-          console.log('hmmm')
+          'no featured work link'
         )}
 
         {featuredWork.link ? (
@@ -104,14 +104,14 @@ export default function FeaturedWork() {
             Live link
           </Link>
         ) : (
-          console.log('hmmm')
+          console.log('no featured work link')
         )}
       </p>
       <p className="relative z-10 mt-2 flex text-sm font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-300 dark:hover:text-teal-500">
         {featuredWork.github ? (
           <LinkIcon className="h-6 w-6 flex-none" />
         ) : (
-          console.log('hmmm')
+          console.log('no featured work github link')
         )}
 
         {featuredWork.github ? (
@@ -124,7 +124,7 @@ export default function FeaturedWork() {
             Github
           </Link>
         ) : (
-          console.log('hmmm')
+          console.log('no featured work github link')
         )}
       </p>
       <Button
