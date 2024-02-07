@@ -1,7 +1,6 @@
 'use client'
 
 import { Fragment, useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'

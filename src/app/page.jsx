@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import { Card } from '@/components/Card'
-import { Cloudinary } from '@cloudinary/url-gen'
 import Socials from '@/components/Socials'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -138,10 +136,6 @@ function Resume() {
       </div>
     </div>
   )
-}
-
-const App = () => {
-  const cld = new Cloudinary({ cloud: { cloudName: 'driui30ox' } })
 }
 
 export default async function Home() {
