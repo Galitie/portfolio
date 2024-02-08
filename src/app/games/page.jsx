@@ -49,7 +49,7 @@ export const games = [
       label: 'Preview TYLERPG',
     },
     github: {
-      href: 'https://github.com/Galitie/async-mobile-game-app',
+      href: 'https://github.com/Galitie/async-mobile-client-app',
       label: 'GitHub for TYLERPG',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/vvdpjyztabulddaz8xsw',
