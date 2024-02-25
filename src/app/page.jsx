@@ -5,6 +5,7 @@ import { Container } from '@/components/Container'
 import logoDevs from '@/images/logos/100devs_logo.jpeg'
 import logoSOA from '@/images/logos/SOA_logo.jpeg'
 import logoVC from '@/images/logos/virtualchair_logo.jpeg'
+import logoPT from '@/images/logos/logoPT.png'
 import FeaturedWork from '@/components/FeaturedWork'
 import About from '@/components/About'
 import { Photos } from '@/components/Photos'
@@ -85,14 +86,21 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: '100Devs',
-      title: 'Software Engineer',
-      logo: logoDevs,
-      start: '2023',
+      company: 'The Public Theater',
+      title: 'Web Developer',
+      logo: logoPT,
+      start: '2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
+    },
+    {
+      company: '100Devs',
+      title: 'Software Engineer',
+      logo: logoDevs,
+      start: '2023',
+      end: '2024',
     },
     {
       company: 'Virtual Chair',
