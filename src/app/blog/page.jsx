@@ -11,19 +11,8 @@ export const metadata = {
 const postsPreview = [
   {
     id: 1,
-    title: 'Make Beautiful Websites - Elementor for Wordpress',
-    href: 'blog/elementor',
-    description:
-      'Is your website editor on Wordpress not giving you enough options? I reccommend the Elementor plugin with two thumbs way up.',
-    imageUrl:
-      'https://elementor.com/cdn-cgi/image/f=auto,w=651/https://elementor.com/wp-content/uploads/2021/05/Create-Websites-image-1-1.png',
-    date: 'Feb 6th, 2024',
-    datetime: '2024-02-06',
-  },
-  {
-    id: 2,
     title: 'This is a placeholder for a future post',
-    href: 'blog/template',
+    href: 'blog/2024/7_6_gamedev',
     description:
       'This is a placeholder for a future post about web developement or game development!',
     imageUrl:
