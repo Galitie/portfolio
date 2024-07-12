@@ -51,7 +51,8 @@ export const work = [
       href: 'https://shamrockgovermentsolutions.com/',
       label: 'Live link to Shamrock Government Solutions',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/usqrmsqfbc6qgoppjyyj',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/sgs_qhor6c',
+
     stack: ['Wordpress', 'HTML', 'CSS', 'Elementor'],
   },
   {
@@ -62,7 +63,7 @@ export const work = [
       href: 'https://www.virtualchair.net/',
       label: 'Live link to Virtual Chair',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/lh19l9ryetucsfaqdjya',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/mpsm8ldnnzqr5153tqvx',
     stack: ['Javascript', 'HTML', 'CSS', 'Wix'],
   },
 ]

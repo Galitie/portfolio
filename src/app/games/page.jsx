@@ -24,7 +24,6 @@ export const games = [
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/dj4vnmopcq7lahqbwtzf',
     stack: ['Godot'],
   },
-
   {
     name: 'Meowvana',
     description:
@@ -37,7 +36,7 @@ export const games = [
       href: 'https://github.com/Galitie/20-sec-game-jam/tree/playtest',
       label: 'GitHub for Meowvana',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/meowvana_ehhz4u',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/pydzxieblvc8rdzdy2po',
     stack: ['Godot'],
   },
   {
@@ -67,7 +66,7 @@ export const games = [
       href: 'https://github.com/Galitie/habit-hatcher',
       label: 'GitHub for Habit Hatcher',
     },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/vk7vhoihgnpi8dwkm1cp',
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/ft0fxk058dwiwz4ubbm1',
     stack: ['React', 'CSS', 'Local Storage', 'JSX'],
   },
   {
