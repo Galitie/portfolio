@@ -4,9 +4,20 @@ import Link from 'next/link'
 
 export const work = [
   {
+    name: 'The Public Theater',
+    description:
+      'Developed and maintained front end user interface designs, integrated website Tessitura CRM, and optimized the CMS user experience for a world famous arts organization and theater.',
+    link: {
+      href: 'https://publictheater.org/',
+      label: 'Live link to The Public Theater',
+    },
+    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1//website/jdrirbadt3tltsfxlain',
+    stack: ['ASP.NET', 'C#', 'Tessitura', 'EpiServer', 'Vue', 'JavaScript'],
+  },
+  {
     name: 'Elopement Photography Awards',
     description:
-      'A multi-page website for a photography awards site, which includes users and photo submission forms.',
+      'Designed and developed a multi-page website for a photography awards site, which includes users and photo submission forms.',
     link: {
       href: 'https://elopementphotographyawards.com/',
       label: 'Live link to Elopement Photography Awards',
@@ -24,7 +35,7 @@ export const work = [
   {
     name: 'Flouer Dances',
     description:
-      'A multi-page website for Flouer who has a Dance and Embodiment business.',
+      'Designed and developed a multi-page website for Flouer who has a Dance and Embodiment business.',
     link: {
       href: 'https://flouerdances.com/',
       label: 'Live link to Flouer Dances',
@@ -33,21 +44,9 @@ export const work = [
     stack: ['Wordpress', 'HTML', 'CSS', 'Elementor'],
   },
   {
-    name: 'Portfolio',
-    description:
-      "You're looking at it - This personal website! Pretty neat, huh?",
-    link: { href: 'https://www.Galitie.com', label: 'Live link to Portfolio' },
-    github: {
-      href: 'https://github.com/Galitie/portfolio',
-      label: 'GitHub for Portfolio',
-    },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/snlnelz09qyzgwyqdnf7',
-    stack: ['React', 'Nextjs', 'Tailwind CSS', 'JSX'],
-  },
-  {
     name: 'Shamrock Government Solutions',
     description:
-      'A clean one page website for a client specializing in C Suite level consulting expertise for growing & transitioning companies.',
+      'Designed and developed a clean one page website for a client specializing in C Suite level consulting expertise for growing & transitioning companies.',
     link: {
       href: 'https://shamrockgovermentsolutions.com/',
       label: 'Live link to Shamrock Government Solutions',
@@ -56,20 +55,9 @@ export const work = [
     stack: ['Wordpress', 'HTML', 'CSS', 'Elementor'],
   },
   {
-    name: 'Katherine Lund - Portfolio',
-    description:
-      'A single page site for Katherine Lund, a professional actor and model based in NYC.',
-    link: {
-      href: 'https://www.kathrinelund.com/',
-      label: 'Live link to Katherine Lund',
-    },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/tlqdj4smsmvti2mpuoht',
-    stack: ['HTML', 'CSS', 'Google Sites'],
-  },
-  {
     name: 'Virtual Chair',
     description:
-      'A multi-page site for an academic conference production company.',
+      'Designed and maintained a multi-page site for an academic conference production company.',
     link: {
       href: 'https://www.virtualchair.net/',
       label: 'Live link to Virtual Chair',
