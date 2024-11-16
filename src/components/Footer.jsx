@@ -26,13 +26,11 @@ export function Footer() {
                 <NavLink href="/games">Games</NavLink>
                 {/* <NavLink href="/blog">Blog</NavLink> */}
               </div>
+              <Socials />
               <p className="text-sm text-zinc-600 dark:text-zinc-400">
                 &copy; {new Date().getFullYear()} Galit Weinfeld. All rights
                 reserved.
               </p>
-            </div>
-            <div>
-              <Socials />
             </div>
           </ContainerInner>
         </div>
