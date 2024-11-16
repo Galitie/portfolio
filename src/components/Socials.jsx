@@ -1,10 +1,5 @@
 import Link from 'next/link'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 
 function MailIcon(props) {
   return (
@@ -31,7 +26,7 @@ function MailIcon(props) {
 
 function SocialLink({ icon: Icon, text, ...props }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
+    <Link className="group" {...props}>
       <span className="group flex gap-1 text-sm font-medium text-zinc-800 transition hover:text-teal-700 dark:text-teal-400 dark:hover:text-zinc-300">
         <Icon className="h-6 w-6 fill-teal-700 transition group-hover:fill-zinc-600 dark:fill-teal-400 dark:group-hover:fill-zinc-300" />
         {text}
@@ -42,7 +37,7 @@ function SocialLink({ icon: Icon, text, ...props }) {
 
 export default function Socials() {
   return (
-    <div className=" mt-6 flex flex-wrap gap-6">
+    <div className="mt-6 flex flex-wrap gap-6">
       <SocialLink
         href="https://www.linkedin.com/in/galit-weinfeld/"
         aria-label="Follow on LinkedIn"
@@ -56,20 +51,6 @@ export default function Socials() {
         icon={GitHubIcon}
         target="_blank"
         text="GitHub"
-      />
-      <SocialLink
-        href="https://twitter.com/galit_ie"
-        aria-label="Follow on Twitter"
-        icon={TwitterIcon}
-        target="_blank"
-        text="Twitter"
-      />
-      <SocialLink
-        href="https://www.instagram.com/galit_ie/"
-        aria-label="Follow on Instagram"
-        icon={InstagramIcon}
-        target="_blank"
-        text="Instagram"
       />
       <SocialLink
         href="mailto:gsweinfeld@gmail.com"

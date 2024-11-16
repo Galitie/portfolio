@@ -6,11 +6,10 @@ import '@/styles/tailwind.css'
 export const metadata = {
   title: {
     template: '%s - Galit Weinfeld',
-    default:
-      'Galit Weinfeld - Software Engineer, Web Developer Hobbiest Game Designer.',
+    default: 'Galit Weinfeld - Software Engineer & Web Developer.',
   },
   description:
-    "I’m Galit, a software engineer and web developer based in New York City. I'm passionate about interactive and gamified experiences.",
+    "I’m Galit, a software engineer and web developer based in New York City. I'm passionate about beautiful, interactive and gamified experiences.",
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

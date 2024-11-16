@@ -151,16 +151,18 @@ export default async function Home() {
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
+          <h2 className="mt-6 text-4xl font-bold text-zinc-600 dark:text-zinc-400">
+            GALIT WEINFELD
+          </h2>
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Full Stack Software Engineer & Web Developer based in NYC
+            Full Stack Software Engineer & Web Developer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Not only do I love to code, but I am passionate about UX, human
-            first design, and interactive and gamified experiences.
+            I am passionate about front end development, UX, human first design,
+            and interactive and gamified experiences.
           </p>
-          <Socials />
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-8">
           <Button
             href="/portfolio"
             variant="secondary"
@@ -179,6 +181,7 @@ export default async function Home() {
             <ArrowDownIcon className="h-4 w-4 stroke-teal-700 transition group-active:stroke-zinc-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50" />
           </Button>
         </div>
+        <Socials />
       </Container>
 
       <Photos />
