@@ -87,7 +87,7 @@ function Resume() {
   let resume = [
     {
       company: 'The Public Theater',
-      title: 'Web Developer',
+      title: 'Full Stack Web Developer',
       logo: logoPT,
       start: '2024',
       end: {
@@ -97,7 +97,7 @@ function Resume() {
     },
     {
       company: '100Devs',
-      title: 'Software Engineer',
+      title: 'Full Stack Software Engineer',
       logo: logoDevs,
       start: '2023',
       end: '2024',
