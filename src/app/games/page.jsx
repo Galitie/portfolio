@@ -10,6 +10,21 @@ export const metadata = {
 
 export const games = [
   {
+    name: 'Tylermon',
+    description:
+      'Tylermon is a auto battler for 4 local players. Train your mon to be the very best!',
+    link: {
+      href: 'https://galitie.itch.io/tylermon',
+      label: 'Live link to Tylermon',
+    },
+    github: {
+      href: 'https://github.com/Galitie/mini-tyler-games/tree/html_demo',
+      label: 'GitHub for Tylermon',
+    },
+    logo: 'https://img.itch.zone/aW1nLzE4Njk5OTQzLnBuZw==/315x250%23c/uBLqsW.png',
+    stack: ['Godot'],
+  },
+  {
     name: 'Cat Summoner',
     description:
       'Summon cute and devilish cats by making sets with magical runes! See if you can beat all 10 challenging levels!',
@@ -54,32 +69,6 @@ export const games = [
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/vvdpjyztabulddaz8xsw',
     stack: ['JavaScript', 'CSS', 'Godot', 'AWS'],
   },
-  {
-    name: 'Habit Hatcher',
-    description:
-      'A to-do list with a twist! Complete your tasks to hatch 10 different monsters!',
-    link: {
-      href: 'https://habit-hatcher.onrender.com/',
-      label: 'Live link to Habit Hatcher',
-    },
-    github: {
-      href: 'https://github.com/Galitie/habit-hatcher',
-      label: 'GitHub for Habit Hatcher',
-    },
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/ft0fxk058dwiwz4ubbm1',
-    stack: ['React', 'CSS', 'Local Storage', 'JSX'],
-  },
-  {
-    name: 'Titans of Gross Anatomy',
-    description:
-      'Titans of Gross Anatomy is a work in progress. TOGA is a  fusion of a first-person rail shooter and an anatomy education game for your mobile device.',
-    logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1/website/chrj0w99teskstvdigro',
-    link: {
-      href: 'https://docs.google.com/presentation/d/e/2PACX-1vSKlVLfMYmi8H819QSpq4Mn1YCCyADltH_GkYiRbH_pQDt34Arz_Sg-HrRnqAEBdgHgpnLrld2H-Xgw/pub?start=false&loop=false&delayms=3000',
-      label: 'Preview',
-    },
-    stack: ['Godot', 'Blender'],
-  },
 ]
 
 function LinkIcon(props) {
@@ -97,7 +86,7 @@ export default function Games() {
   return (
     <SimpleLayout
       title="Games I have had a hand in creating : "
-      intro="In my free time you can find me coding, but as a hobbiest game dev! I am passionate about game design and development. Also I like cats..."
+      intro="In my free time you can find me coding, but as a hobbiest game dev! I am passionate about game design and development."
     >
       <ul
         role="list"
