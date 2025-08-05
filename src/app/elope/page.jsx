@@ -1,6 +1,6 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { ElopementPhotos } from '@/components/elopementPhotos'
+import { ElopementPhotos } from '@/components/ElopementPhotos'
 import Image from 'next/image'
 import Link from 'next/link'
 
