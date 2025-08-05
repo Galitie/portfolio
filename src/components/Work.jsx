@@ -12,7 +12,17 @@ export const work = [
       label: 'Live link to The Public Theater',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1//website/jdrirbadt3tltsfxlain',
-    stack: ['ASP.NET', 'C#', 'Tessitura', 'EpiServer', 'Vue', 'JavaScript'],
+    stack: [
+      'ASP.NET',
+      'MVC',
+      'C#',
+      'JavaScript',
+      'Vue',
+      'Bootstrap',
+      'Tessitura',
+      'EpiServer',
+      'Umbraco',
+    ],
   },
   {
     name: 'Elopement Photography Awards',
@@ -23,7 +33,7 @@ export const work = [
       label: 'Live link to Elopement Photography Awards',
     },
     logo: 'https://res.cloudinary.com/driui30ox/image/upload/q_50/v1//website/AwardCircleInstagram_ihuwrp',
-    stack: ['Wordpress', 'HTML', 'CSS', 'Elementor', 'Python'],
+    stack: ['Wordpress', 'HTML', 'CSS', 'PHP', 'Python', 'Elementor'],
   },
   {
     name: 'Corner Pocket',
