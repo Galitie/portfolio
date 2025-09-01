@@ -132,7 +132,7 @@ export default async function Elopement() {
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
-                src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/502579348_10235975562038730_3383069361052283471_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UO0xBYfXkF0Q7kNvwFH-GpB&_nc_oc=AdnAMOZfOqEBkG99PUPDVZibvZm1UDX3euBE3SBJ1Ng0PWO4GWH3y8adAlADRsS8BwUJG0s5zoAOHvo7cDenFNMg&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=DZHoRb5HE0PjddK6iz3bzQ&oh=00_AfW15JnSyZ2qFQxZIJQpHBr3YmP_jzn_5z9vK-C-zox8Kg&oe=68960AA6"
+                src="https://res.cloudinary.com/driui30ox/image/upload/v1756741079/elope/501798773_10236004515042537_1032366552669274485_n_cut8gx.jpg"
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover duration-500 hover:scale-125 dark:bg-zinc-800"
